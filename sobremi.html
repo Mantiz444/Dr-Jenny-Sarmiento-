@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra Jenny Sarmiento | Medicina Estética</title>
+  <link rel="stylesheet" href="sobremi.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <img src="https://raw.githubusercontent.com/Mantiz444/Imagenes-web/089962be052ea95016ee041b67beb3a37cd23208/Imagotipo.svg"
+         alt="Imagotipo Dra Jenny Sarmiento" class="Imagotipo">
+    <ul>
+      <li><a href="inicio.html">inicio</a></li>
+      <li><a href="sobremí.html">sobre mí</a></li>
+      <li><a href="servicios.html">servicios</a></li>
+      <li><a href="contacto.html">contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner-sobre-mi">
+    <img src="https://github.com/Mantiz444/Pagina-web/blob/main/Copy.png?raw=true" alt="Decoración sobre mí">
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="sobre-mi" id="sobre-mí">
+    <div class="contenido">
+      <div class="imagen-doctora">
+        <img src="https://github.com/Mantiz444/Pagina-web/blob/main/Jeny.png?raw=true" alt="Dra. Jenny Sarmiento">
+      </div>
+      <div class="texto-sobre-mi">
+        <h2>Sobre mí</h2>
+        <h3>Formación Académica</h3>
+        <p>Graduada en Medicina con especialización en Medicina Estética. Formación en armonización facial, micropigmentación y tratamientos capilares.</p>
+        <h3>Experiencia</h3>
+        <p>Más de [X] años de experiencia en medicina estética. Especialista en procedimientos mínimamente invasivos para realzar la belleza natural.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frase -->
+  <section class="frase-doctora">
+    <p>"Cada rostro es único y merece un tratamiento diseñado a su medida. Mi misión es resaltar la armonía facial de cada paciente con un enfoque basado en ciencia, arte y naturaleza."</p>
+  </section>
+
+  <!-- Formulario -->
+  <section class="formulario-agendamiento" id="contacto">
+    <div class="imagen">
+      <img src="https://github.com/Mantiz444/Pagina-web/blob/main/Chica.png?raw=true" alt="Mujer con maquillaje natural y hojas" />
+    </div>
+
+    <div class="formulario">
+      <h2>Formulario de Agendamiento</h2>
+      <p>¡Solicita tu cita y descubre el tratamiento ideal para ti!</p>
+
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="tratamiento">Selecciona tu tratamiento:</label>
+        <select id="tratamiento" name="tratamiento" required>
+          <option value="">Selecciona una opción</option>
+          <option value="reconstruccion">Reconstrucción Areolas</option>
+          <!-- faltan mas -->
+        </select>
+
+        <label for="mensaje">Mensaje adicional:</label>
+        <input type="text" id="mensaje" name="mensaje" />
+
+        <button type="submit">Contacto</button>
+      </form>
+
+      <p class="visitanos">¡O visítanos!</p>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <section class="mapa">
+    <iframe
+      class="mapa-iframe"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.408056894828!2d-74.041066!3d4.6989567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aae2f91df0f%3A0x9777c7a18b5203df!2zQ2wuIDExOSAjMTQtNDIsIFVzYXF1w6luLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1744084587146!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    </iframe>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+/*estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Tipografía */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+  
+  body {
+    font-family: "Playfair Display", serif;
+  }
+  
+  /* Menú de navegación */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: #a8bba2;
+  }
+  
+  /* Imagotipo */
+  .Imagotipo {
+    max-width: 100%;
+    height:auto;
+    max-height: 80px;
+  }
+  
+  /*Lista del menu, inicio, servicios, acerca, testimonios*/
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /*Para el texto*/
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  /* Estilo del texto*/
+  .navbar ul li a {
+    text-decoration: none;
+    color: #2b3740;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  /*Efecto del cursor (hover)*/
+  .navbar ul li a:hover {
+    color:#f5f5dc
+  }
+
+  .intro-servicios {
+    background-color: #253740; 
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .intro-contenido {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .intro-imagen img {
+    max-width: 250px;
+    height: auto;
+  }
+  
+  .intro-texto {
+    max-width: 600px;
+    color: #f1f1f1;
+    font-family: "Georgia", serif;
+  }
+  
+  .intro-texto h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f9f4e8;
+  }
+  
+  .intro-texto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e2e2e2;
+  }
+  .servicios {
+    background-color: #f3f5e9;
+    padding: 60px 40px;
+  }
+  
+  .titulo-seccion {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Dancing Script', cursive; 
+    color: #1e1e1e;
+  }
+  
+  .bloque-servicio {
+    margin-bottom: 60px;
+  }
+  
+  .bloque-servicio h3 {
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #1e1e1e;
+    margin-bottom: 30px;
+    color: #1e1e1e;
+  }
+  
+  .contenido-servicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .contenido-servicio img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .contenido-servicio ul {
+    max-width: 650px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contenido-servicio li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+  }
+  .agenda-cita {
+    background-color: #a0bda3; 
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .agenda-cita h2 {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 48px;
+    color: #1e1e1e;
+    margin-bottom: 40px;
+  }
+  
+  .btn-agendar {
+    background-color: #f5c6c4; 
+    color: #1e1e1e;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-agendar:hover {
+    background-color: #f2b3b0;
+  }

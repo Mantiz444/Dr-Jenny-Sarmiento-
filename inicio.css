@@ -1,0 +1,324 @@
+/*estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: "Playfair Display", serif;
+    font-family: 'MonteCarlo', cursive;
+    font-family: 'outfit', sans-serif;
+}
+
+/* Menú de navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: #a8bba2;
+}
+
+/* Imagotipo */
+.Imagotipo {
+    height:auto;
+    overflow: visible;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+/*Lista del menu, inicio, servicios, acerca, testimonios*/
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+/*Para el texto*/
+.navbar ul li {
+    margin: 0 15px;
+}
+
+/* Estilo del texto*/
+.navbar ul li a {
+    text-decoration: none;
+    color: #2b3740;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'outfit', sans-serif;
+}
+
+/*Efecto del cursor (hover)*/
+.navbar ul li a:hover {
+    color:#f5f5dc
+}
+
+.btn-nav-contacto {
+    padding: 10px 25px;
+    border: 2px solid #f5f5dc;
+    border-radius: 25px;
+    background-color:#d8a7b1 ;
+    color: #2B3740;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(245, 245, 220, 0.5);
+    transition: all 0.3s ease;
+}
+
+.btn-nav-contacto:hover {
+    background-color: #d8a7b1;
+    color: #2B3740;
+    box-shadow: 0 6px 12px rgba(245, 245, 220, 0.5);
+}
+
+/*Sección de bienvenida*/
+.contenedor-bienvenida {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 50px;
+    background-color: #f5f5dc;
+}
+
+/*Imagen*/
+.imagen-bienvenida{
+    width: 350px;
+    border-radius: 10px;
+}
+
+/*Texto bienvenida*/
+.texto-bienvenida {
+    max-width: 800px;
+    text-align: left;
+}
+
+.texto-bienvenida h1 {
+    font-size: 100px;
+    color: #2b3740;
+    font-weight: bold;
+    font-family: 'MonteCarlo', cursive;
+}
+
+.texto-bienvenida p {
+    font-size: 20px;
+    color: #2B3740;
+    line-height: 1.5;
+    font-weight: none;
+}
+
+.btn-contacto {
+    justify-content: center;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 40px;
+    background-color: #d8a7b1; 
+    color: #2B3740; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 6px 12px rgba(216, 137, 166, 0.5);
+    border-radius: 50px; 
+    border: 2px solid #d8a7b1; 
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-contacto:hover {
+    background-color: #f5f5dc; 
+    border: 2px solid #E7C6C6; 
+    color: #2B3740;
+}
+
+.frase-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+.imagen-frase {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+/*Servicios*/
+.treatments {
+    background-color: #24313C; 
+    text-align: center;
+    padding: 50px 20px;
+    color: #f5f5dc;
+}
+
+.treatments h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.treatments-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.treatment {
+    max-width: 180px;
+    text-align: center;
+}
+
+.treatment img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+}
+
+.treatment h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.treatment p {
+    font-size: 14px;
+}
+
+.btn-consulta {
+    background-color: #E8B8C5; 
+    color: #24313C;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-consulta:hover {
+    background-color: #d49fae;
+}
+
+/*Testimonios*/
+/* Estilos generales */
+.testimonios-container {
+    width: 100%;
+    background-color: #f5f5dc;
+    text-align: center;
+    margin: 0 auto;
+    max-width: none; 
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/* Estilo del texto del testimonio */
+.testimonios-container h2 {
+    color: #24313C; 
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Testimonios */
+.testimonio {
+    display: none;
+    font-size: 18px;
+    font-style: italic;
+    color: #24313C;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Mostrar solo el testimonio activo */
+.testimonio.activo {
+    display: block;
+}
+
+/* Estilos para los botones de navegación */
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.navegacion button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #f5f5dc;
+}
+
+.navegacion button:hover {
+    color: #f5f5dc;
+}
+.footer-informativo {
+    background-color: #a8bba2; 
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  
+  .footer-informativo .columna {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 10px;
+  }
+  
+  .footer-informativo .titulo-footer {
+    font-family: 'Nombre-de-tu-tipografía-script', cursive;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2B3A35;
+  }
+  
+  .footer-informativo p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #2B3A35;
+    line-height: 1.5;
+  }
+  .footer-legal {
+    background-color: #2C3740; 
+    color: #F7CAC9; 
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+/* 3. Media Queries - Se colocan al final */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .imagen-bienvenida {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .contenedor-bienvenida {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .texto-bienvenida {
+        text-align: center;
+    }
+}
