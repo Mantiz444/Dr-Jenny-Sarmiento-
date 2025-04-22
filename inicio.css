@@ -1,4 +1,4 @@
-/*estilos generales*/
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +7,18 @@
 
 /* Tipografía */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap'); /* Importa Outfit */
 
 body {
-    font-family: "Playfair Display", serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.texto-bienvenida h1 {
     font-family: 'MonteCarlo', cursive;
-    font-family: 'outfit', sans-serif;
 }
 
 /* Menú de navegación */
@@ -19,81 +26,53 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 5%;
-    background-color: #F5F5DC;
-    border: 3px solid #2B3740;
-    boder-radius: 20px
+    padding: 20px 40px;
+    background-color: #9bb18c;
 }
 
 /* Imagotipo */
-.Imagotipo {
-    height: 100px;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
+.Imagotipo img {
+    height: 200px;
+    width:auto;
 }
 
+/* Contenedor de los botones */
 .menu-container {
     display: flex;
-    align/items:center;
-    gap:20px;
-    background-color: #f5f5DC;
-    border: 2px solid: #2B3740;
-    border-radius: 30px;
-    padding: 10px 30px;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
-/*Lista del menu, inicio, servicios, acerca, testimonios*/
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-/*Para el texto*/
-.navbar ul li {
-    margin: 0 15px;
-}
-
-/* Estilo del texto*/
-.navbar ul li a {
+/* Botones de navegación */
+.menu-container a {
     text-decoration: none;
-    color: #2b3740;
-    font-weight: bold;
+    color: #2B3740;
+    font-family: 'Outfit', sans-serif;
     font-size: 20px;
-    font-family: 'outfit', sans-serif;
-    padding: 10px 20px
-    border-radius:25px
-    background color: #d8a7b1;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.menu-container a:hover {
+    background-color: #f5f5dc; 
+    border-radius: 20px;
+    padding: 8px 15px;
 }
 
-/*Efecto del cursor (hover)*/
-.navbar ul li a:hover {
-    color:#2b3740
-    background color: #f5f5dc;
-    box shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
-}
-
+/* Botón de contacto */
 .btn-nav-contacto {
-    padding: 10px 25px;
-    border: 2px solid #f5f5dc;
-    border-radius: 25px;
-    background-color:#d8a7b1 ;
-    color: #2B3740;
+    background-color: #D8A7B1;
+    padding: 8px 15px;
+    border-radius: 20px;
     font-weight: bold;
-    font-size: 20px;
-    box-shadow: 0 4px 8px rgba(245, 245, 220, 0.5);
-    transition: all 0.3s ease;
-}
-
-.btn-nav-contacto:hover {
-    background-color: #d8a7b1;
     color: #2B3740;
-    box-shadow: 0 6px 12px rgba(245, 245, 220, 0.5);
+    text-decoration: none;
+}
+.btn-nav-contacto:hover {
+    background-color: #D8A7B1; 
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
 }
 
-/*Sección de bienvenida*/
+/* Sección de bienvenida */
 .contenedor-bienvenida {
     display: flex;
     align-items: center;
@@ -103,13 +82,13 @@ body {
     background-color: #f5f5dc;
 }
 
-/*Imagen*/
-.imagen-bienvenida{
+/* Imagen */
+.imagen-bienvenida {
     width: 350px;
     border-radius: 10px;
 }
 
-/*Texto bienvenida*/
+/* Texto bienvenida */
 .texto-bienvenida {
     max-width: 800px;
     text-align: left;
@@ -126,7 +105,7 @@ body {
     font-size: 20px;
     color: #2B3740;
     line-height: 1.5;
-    font-weight: none;
+    font-weight: normal;
 }
 
 .btn-contacto {
@@ -134,24 +113,26 @@ body {
     display: inline-block;
     margin-top: 15px;
     padding: 15px 40px;
-    background-color: #d8a7b1; 
-    color: #2B3740; 
+    background-color: #d8a7b1;
+    color: #2B3740;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
     box-shadow: 0 6px 12px rgba(216, 137, 166, 0.5);
-    border-radius: 50px; 
-    border: 2px solid #d8a7b1; 
+    border-radius: 50px;
+    border: 2px solid #d8a7b1;
     text-align: center;
     transition: 0.3s;
 }
 
 .btn-contacto:hover {
-    background-color: #f5f5dc; 
-    border: 2px solid #E7C6C6; 
+    background-color: #f5f5dc;
+    border: 2px solid #E7C6C6;
     color: #2B3740;
+    
 }
 
+/* Frase de inicio */
 .frase-inicio {
     width: 100%;
     display: flex;
@@ -166,9 +147,10 @@ body {
     height: auto;
     object-fit: contain;
 }
-/*Servicios*/
+
+/* Servicios */
 .treatments {
-    background-color: #24313C; 
+    background-color: #24313C;
     text-align: center;
     padding: 50px 20px;
     color: #f5f5dc;
@@ -177,7 +159,7 @@ body {
 .treatments h2 {
     font-size: 24px;
     margin-bottom: 30px;
-    font-family: 'MonteCarlo', cursive;
+    font-family: 'Outfit', sans-serif;
 }
 
 .treatments-container {
@@ -185,6 +167,7 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .treatment {
@@ -193,14 +176,15 @@ body {
 }
 
 .treatment img {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .treatment h3 {
     font-size: 16px;
     margin: 10px 0;
+    font-family: 'Outfit', sans-serif;
 }
 
 .treatment p {
@@ -208,7 +192,7 @@ body {
 }
 
 .btn-consulta {
-    background-color: #E8B8C5; 
+    background-color: #E8B8C5;
     color: #24313C;
     padding: 10px 20px;
     border: none;
@@ -216,32 +200,32 @@ body {
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .btn-consulta:hover {
     background-color: #d49fae;
 }
 
-/*Testimonios*/
-/* Estilos generales */
+/* Testimonios */
 .testimonios-container {
     width: 100%;
     background-color: #f5f5dc;
     text-align: center;
     margin: 0 auto;
-    max-width: none; 
+    max-width: none;
     padding: 40px 20px;
     border-radius: 10px;
 }
 
-/* Estilo del texto del testimonio */
 .testimonios-container h2 {
-    color: #24313C; 
+    color: #24313C;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-/* Testimonios */
 .testimonio {
     display: none;
     font-size: 18px;
@@ -251,12 +235,10 @@ body {
     padding: 10px;
 }
 
-/* Mostrar solo el testimonio activo */
 .testimonio.activo {
     display: block;
 }
 
-/* Estilos para los botones de navegación */
 .navegacion {
     display: flex;
     justify-content: center;
@@ -275,68 +257,55 @@ body {
 .navegacion button:hover {
     color: #f5f5dc;
 }
+
+/* Footer Informativo */
 .footer-informativo {
-    background-color: #a8bba2; 
+    background-color: #a8bba2;
     padding: 40px 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: left;
-  }
-  
-  .footer-informativo .columna {
+}
+
+.footer-informativo .columna {
     flex: 1;
     min-width: 250px;
     max-width: 300px;
     margin: 10px;
-  }
-  
-  .footer-informativo .titulo-footer {
+}
+
+.footer-informativo .titulo-footer {
     font-family: 'Nombre-de-tu-tipografía-script', cursive;
     font-size: 24px;
     margin-bottom: 15px;
     color: #2B3A35;
-  }
-  
-  .footer-informativo p {
+}
+
+.footer-informativo p {
     margin: 8px 0;
     font-size: 16px;
     color: #2B3A35;
     line-height: 1.5;
-  }
-  .footer-legal {
-    background-color: #2C3740; 
-    color: #F7CAC9; 
+}
+
+.footer-legal {
+    background-color: #2C3740;
+    color: #F7CAC9;
     text-align: center;
     padding: 10px;
     font-weight: bold;
     font-size: 14px;
-  }
+}
+
 /* 3. Media Queries - Se colocan al final */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+@media (min-width: 1024px) {
+    .menu-container {
+        width: 500px;
+        padding: 20px 40px;
     }
 
-    .navbar ul {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .imagen-bienvenida {
-        width: 80%;
-        max-width: 300px;
-    }
-
-    .contenedor-bienvenida {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .texto-bienvenida {
-        text-align: center;
+    .Imagotipo img {
+        height: 90px;
     }
 }
