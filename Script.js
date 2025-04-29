@@ -24,3 +24,23 @@ document.addEventListener("DOMContentLoaded", function () {
     // Mostrar el primer testimonio al cargar la página
     mostrarTestimonio(indiceActual);
 });
+// Carrusel de imágenes
+const slides = document.querySelectorAll(".slide");
+let indexImagen = 0;
+
+function mostrarSlide(nuevoIndex) {
+    slides.forEach(slide => slide.classList.remove("activo"));
+    slides[nuevoIndex].classList.add("activo");
+}
+
+document.querySelector(".prev-button-imagen").addEventListener("click", () => {
+    indexImagen = (indexImagen - 1 + slides.length) % slides.length;
+    mostrarSlide(indexImagen);
+});
+
+document.querySelector(".next-button-imagen").addEventListener("click", () => {
+    indexImagen = (indexImagen + 1) % slides.length;
+    mostrarSlide(indexImagen);
+});
+
+mostrarSlide(indexImagen); // Mostrar la primera imagen al cargar
