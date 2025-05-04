@@ -1,29 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const testimonios = document.querySelectorAll(".testimonio");
-    const btnAnterior = document.querySelector(".prev-button"); // Ajuste en la selección
-    const btnSiguiente = document.querySelector(".next-button"); // Ajuste en la selección
-
-    let indiceActual = 0;
-
-    function mostrarTestimonio(index) {
-        testimonios.forEach((testimonio, i) => {
-            testimonio.classList.toggle("activo", i === index);
-        });
+    let testimonios = document.querySelectorAll('.testimonio');
+    let indice = 0;
+  
+    function mostrarSiguienteTestimonio() {
+      testimonios[indice].classList.remove('activo');
+      indice = (indice + 1) % testimonios.length;
+      testimonios[indice].classList.add('activo');
     }
-
-    btnAnterior.addEventListener("click", function () {
-        indiceActual = (indiceActual - 1 + testimonios.length) % testimonios.length;
-        mostrarTestimonio(indiceActual);
-    });
-
-    btnSiguiente.addEventListener("click", function () {
-        indiceActual = (indiceActual + 1) % testimonios.length;
-        mostrarTestimonio(indiceActual);
-    });
-
-    // Mostrar el primer testimonio al cargar la página
-    mostrarTestimonio(indiceActual);
-});
+  
+    setInterval(mostrarSiguienteTestimonio, 6000); // cambia cada 4 segundos
+  }); // ← AQUÍ va la llave de cierre de la función
 // Carrusel de imágenes
 const slides = document.querySelectorAll(".slide");
 let indexImagen = 0;
