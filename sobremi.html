@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra Jenny Sarmiento | Medicina Estética</title>
-  <link rel="stylesheet" href="sobremi.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Dra Jenny Sarmiento | Medicina Estética</title>
+        <link rel="stylesheet" href="sobremi.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Navegación -->
-  <nav class="navbar">
-    <img src="https://raw.githubusercontent.com/Mantiz444/Imagenes-web/089962be052ea95016ee041b67beb3a37cd23208/Imagotipo.svg"
-         alt="Imagotipo Dra Jenny Sarmiento" class="Imagotipo">
-    <ul>
-      <li><a href="inicio.html">inicio</a></li>
-      <li><a href="sobremí.html">sobre mí</a></li>
-      <li><a href="servicios.html">servicios</a></li>
-      <li><a href="contacto.html">contacto</a></li>
-    </ul>
-  </nav>
-
-  <!-- Banner -->
-  <section class="banner-sobre-mi">
-    <img src="https://github.com/Mantiz444/Pagina-web/blob/main/Copy.png?raw=true" alt="Decoración sobre mí">
-  </section>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      
+         <!-- Navegación -->
+            <nav class="navbar"> 
+                <div class="Imagotipo">
+                <img src="imagotipo-oficial.png"alt="Imagotipo Dra Jenny Sarmiento">
+            </div>
+            <div class="menu-container">
+                <a href ="inicio.html">Inicio</a>
+                <a href="sobremi.html">Sobre mí</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="testimonios.html">Testimonios</a>
+                <a href="contacto.html"class="btn-nav-contacto">Contacto</a>
+            </div>
+        </nav>
+<!-- Banners carrusel -->
+<section class="seccion-banners">
+  <div class="imagen-con-sombra">
+    <img src="banner-centro.png" alt="Banner 1">
+  </div>
+  <div class="imagen-con-sombra">
+    <img src="banner-izquierda.png" alt="Banner 2">
+  </div>
+  <div class="imagen-con-sombra">
+    <img src="banner-derecha.png" alt="Banner 3">
+  </div>
+</section>
 
   <!-- Sobre mí -->
   <section class="sobre-mi" id="sobre-mí">
     <div class="contenido">
-      <div class="imagen-doctora">
-        <img src="https://github.com/Mantiz444/Pagina-web/blob/main/Jeny.png?raw=true" alt="Dra. Jenny Sarmiento">
-      </div>
       <div class="texto-sobre-mi">
         <h2>Sobre mí</h2>
         <h3>Formación Académica</h3>
-        <p>Graduada en Medicina con especialización en Medicina Estética. Formación en armonización facial, micropigmentación y tratamientos capilares.</p>
+        <p>Soy médica egresada de la Universidad de La Sabana. Mi interés por la estética me llevó a especializarme en Medicina Estética en la Fundación Universitaria de Ciencias de la Salud (FUCS), donde adquirí las bases científicas y técnicas que hoy aplico en cada procedimiento estético.</p>
         <h3>Experiencia</h3>
-        <p>Más de [X] años de experiencia en medicina estética. Especialista en procedimientos mínimamente invasivos para realzar la belleza natural.</p>
+        <p>Cuento con más de seis años de experiencia en el campo de la medicina estética. A lo largo de este tiempo, he trabajado con cientos de pacientes que buscan mejorar su imagen de forma natural, cuidando cada detalle con profesionalismo y empatía. Lo que más disfruto de esta profesión es ver cómo los tratamientos no solo generan resultados visibles, sino también un impacto emocional positivo.</p>
+        <h3>¿Dónde me encuentro y en qué me especializo?</h3>
+        <p>Mi consulta está ubicada en Bogotá, en la clínica Stemwell Health – Regenerative Medicine, en la Cra. 13 #118-08. En donde Me especializo en todo lo relacionado con micropigmentación y microblading. incluyendo cejas, labios y camuflaje de cicatrices como en la reconstrucción estética de areolas realistas, acompañando procesos médicos y emocionales con sensibilidad y precisión.</p>
       </div>
     </div>
   </section>
@@ -53,7 +62,7 @@
   <!-- Formulario -->
   <section class="formulario-agendamiento" id="contacto">
     <div class="imagen">
-      <img src="https://github.com/Mantiz444/Pagina-web/blob/main/Chica.png?raw=true" alt="Mujer con maquillaje natural y hojas" />
+      <img src="Chica.png" alt="Mujer con maquillaje natural y hojas"/>
     </div>
 
     <div class="formulario">
@@ -71,16 +80,26 @@
         <input type="email" id="email" name="email" required />
 
         <label for="tratamiento">Selecciona tu tratamiento:</label>
+        <div class="select-wrapper">
         <select id="tratamiento" name="tratamiento" required>
           <option value="">Selecciona una opción</option>
-          <option value="reconstruccion">Reconstrucción Areolas</option>
-          <!-- faltan mas -->
+          <option value="reconstruccion">Armonización facial</option>
+          <option value="reconstruccion">Toxina botulínica</option>
+          <option value="reconstruccion">Ácido hialurónico</option>
+          <option value="reconstruccion">Hilos tensores</option>
+          <option value="reconstruccion">Plasma rico en plaquetas</option>
+          <option value="reconstruccion">Mesoterapia capilar</option>
+          <option value="reconstruccion">Micropigmentación y microblading/option>
+          <option value="reconstruccion">Camuflaje de cicatrices</option>
+          <option value="reconstruccion">Reconstrucción de areolas</option>
         </select>
+      </div>
 
         <label for="mensaje">Mensaje adicional:</label>
         <input type="text" id="mensaje" name="mensaje" />
-
-        <button type="submit">Contacto</button>
+      <div class="contenedor-boton">
+        <button type="submit">Enviar</button>
+      </div>
       </form>
 
       <p class="visitanos">¡O visítanos!</p>
@@ -91,9 +110,8 @@
   <section class="mapa">
     <iframe
       class="mapa-iframe"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.408056894828!2d-74.041066!3d4.6989567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9aae2f91df0f%3A0x9777c7a18b5203df!2zQ2wuIDExOSAjMTQtNDIsIFVzYXF1w6luLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1744084587146!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.418203965023!2d-74.039858!3d4.697177600000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab093c96367%3A0x75a977635ce6b120!2sStemwell%20Health%20-%20Regenerative%20Medicine!5e0!3m2!1ses!2sco!4v1746471252501!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </iframe>
   </section>
-
 </body>
 </html>
