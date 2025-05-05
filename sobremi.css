@@ -1,117 +1,342 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Dra Jenny Sarmiento | Medicina Estética</title>
-        <link rel="stylesheet" href="sobremi.css">
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
-    </head>
-    <body>
-      
-         <!-- Navegación -->
-            <nav class="navbar"> 
-                <div class="Imagotipo">
-                <img src="imagotipo-oficial.png"alt="Imagotipo Dra Jenny Sarmiento">
-            </div>
-            <div class="menu-container">
-                <a href ="inicio.html">Inicio</a>
-                <a href="sobremi.html">Sobre mí</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="testimonios.html">Testimonios</a>
-                <a href="contacto.html"class="btn-nav-contacto">Contacto</a>
-            </div>
-        </nav>
-<!-- Banners carrusel -->
-<section class="seccion-banners">
-  <div class="imagen-con-sombra">
-    <img src="banner-centro.png" alt="Banner 1">
-  </div>
-  <div class="imagen-con-sombra">
-    <img src="banner-izquierda.png" alt="Banner 2">
-  </div>
-  <div class="imagen-con-sombra">
-    <img src="banner-derecha.png" alt="Banner 3">
-  </div>
-</section>
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+}
 
-  <!-- Sobre mí -->
-  <section class="sobre-mi" id="sobre-mí">
-    <div class="contenido">
-      <div class="texto-sobre-mi">
-        <h2>Sobre mí</h2>
-        <h3>Formación Académica</h3>
-        <p>Soy médica egresada de la Universidad de La Sabana. Mi interés por la estética me llevó a especializarme en Medicina Estética en la Fundación Universitaria de Ciencias de la Salud (FUCS), donde adquirí las bases científicas y técnicas que hoy aplico en cada procedimiento estético.</p>
-        <h3>Experiencia</h3>
-        <p>Cuento con más de seis años de experiencia en el campo de la medicina estética. A lo largo de este tiempo, he trabajado con cientos de pacientes que buscan mejorar su imagen de forma natural, cuidando cada detalle con profesionalismo y empatía. Lo que más disfruto de esta profesión es ver cómo los tratamientos no solo generan resultados visibles, sino también un impacto emocional positivo.</p>
-        <h3>¿Dónde me encuentro y en qué me especializo?</h3>
-        <p>Mi consulta está ubicada en Bogotá, en la clínica Stemwell Health – Regenerative Medicine, en la Cra. 13 #118-08. En donde Me especializo en todo lo relacionado con micropigmentación y microblading. incluyendo cejas, labios y camuflaje de cicatrices como en la reconstrucción estética de areolas realistas, acompañando procesos médicos y emocionales con sensibilidad y precisión.</p>
-      </div>
-    </div>
-  </section>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-  <!-- Frase -->
-  <section class="frase-doctora">
-    <p>"Cada rostro es único y merece un tratamiento diseñado a su medida. Mi misión es resaltar la armonía facial de cada paciente con un enfoque basado en ciencia, arte y naturaleza."</p>
-  </section>
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+}
 
-  <!-- Formulario -->
-  <section class="formulario-agendamiento" id="contacto">
-    <div class="imagen">
-      <img src="Chica.png" alt="Mujer con maquillaje natural y hojas"/>
-    </div>
+.texto-bienvenida h1 {
+    font-family: 'MonteCarlo', cursive;
+}
 
-    <div class="formulario">
-      <h2>Formulario de Agendamiento</h2>
-      <p>¡Solicita tu cita y descubre el tratamiento ideal para ti!</p>
+/* Menú de navegación */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  background-color: #9bb18c;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+}
 
-      <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
+/* Imagotipo */
+.Imagotipo img {
+  height: 30px;
+  width: auto;
+}
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required />
+/* Contenedor de los botones */
+.menu-container {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
 
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required />
+/* Botones de navegación */
+.menu-container a {
+  text-decoration: none;
+  color: #1A2025;
+  font-family: 'Outfit', sans-serif;
+  font-size: 25px;
+  border-radius: 50px;
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+.menu-container a:hover {
+  background-color: #f5f5dc; 
+  transition: all 0.3s ease;
+}
 
-        <label for="tratamiento">Selecciona tu tratamiento:</label>
-        <div class="select-wrapper">
-        <select id="tratamiento" name="tratamiento" required>
-          <option value="">Selecciona una opción</option>
-          <option value="reconstruccion">Armonización facial</option>
-          <option value="reconstruccion">Toxina botulínica</option>
-          <option value="reconstruccion">Ácido hialurónico</option>
-          <option value="reconstruccion">Hilos tensores</option>
-          <option value="reconstruccion">Plasma rico en plaquetas</option>
-          <option value="reconstruccion">Mesoterapia capilar</option>
-          <option value="reconstruccion">Micropigmentación y microblading/option>
-          <option value="reconstruccion">Camuflaje de cicatrices</option>
-          <option value="reconstruccion">Reconstrucción de areolas</option>
-        </select>
-      </div>
+/* Botón de contacto */
+.btn-nav-contacto {
+  background-color: #D8A7B1;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 12px 25px;
+  color: #1A2025;
+  text-decoration: none;
+  margin-left: 20px;
+  box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
+}
+.btn-nav-contacto:hover {
+  background-color: #f5f5dc; 
+  box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
+}
+/*imagenes*/
+.imagen-con-sombra {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
-        <label for="mensaje">Mensaje adicional:</label>
-        <input type="text" id="mensaje" name="mensaje" />
-      <div class="contenedor-boton">
-        <button type="submit">Enviar</button>
-      </div>
-      </form>
+.imagen-con-sombra::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 60px rgba(36, 36, 33, 0.7);
+}
 
-      <p class="visitanos">¡O visítanos!</p>
-    </div>
-  </section>
+.imagen-con-sombra img {
+  width: 100%;
+  display: block;
+}
 
-  <!-- Mapa -->
-  <section class="mapa">
-    <iframe
-      class="mapa-iframe"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.418203965023!2d-74.039858!3d4.697177600000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab093c96367%3A0x75a977635ce6b120!2sStemwell%20Health%20-%20Regenerative%20Medicine!5e0!3m2!1ses!2sco!4v1746471252501!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </iframe>
-  </section>
-</body>
-</html>
+/* "Sobre mí" */
+.sobre-mi {
+  background-color: #9bb18c; 
+  color: #1A2025;
+  padding: 20px 20px 60px 20px;
+  width: 100%;
+}
+
+/* Contenido centrado pero a lo ancho */
+.contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Texto general */
+.texto-sobre-mi {
+  width: 100%;
+}
+
+/* Título principal */
+.texto-sobre-mi h2 {
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: 'MonteCarlo', cursive;
+  text-align: center;
+}
+
+/* Subtítulos */
+.texto-sobre-mi h3 {
+  font-size: 25px;
+  text-decoration:underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 2px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Párrafos */
+.texto-sobre-mi p {
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 300;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* frase */
+.frase-doctora {
+  background-color: #f5f5dc; 
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+}
+
+.frase-doctora p {
+  font-size: 20px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  color: #1A2025;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+/* "formulario" */
+.formulario-agendamiento {
+  display: flex;
+  background-color: #1A2025; 
+  color: #D8A7B1; 
+  font-family: 'Outfit', sans-serif;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 450px;
+}
+
+.formulario {
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formulario h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #D8A7B1;
+}
+
+.formulario p {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+input, select textarea{
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #D8A7B1;
+  background-color: transparent;
+  color: #D8A7B1;
+  font-size: 22px;
+}
+select {
+  background-color: rgba(216, 167, 177, 0.2); 
+  color: #D8A7B1; 
+  border: 2px solid #D8A7B1;
+  border-radius: 12px;
+  padding: 12px 32px;
+  font-size: 20px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  appearance: none;
+}
+
+button {
+  background-color: #D8A7B1;
+  color: #1A2025;
+  border: none;
+  padding: 12px 32px;
+  font-size: 25px;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 50px; 
+  box-shadow: 0 6px 12px rgba(216, 137, 166, 0.5);
+  transition: background-color 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+  cursor: pointer;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #1A2025;
+  color: #f5f5dc;
+  box-shadow: 0 4px 16px #D8A7B1;
+  border: 2px solid #D8A7B1;
+}
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding-right: 40px; 
+  cursor: pointer;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
+  color: #D8A7B1; 
+}
+
+.visitanos {
+  margin-top: 20px;
+  text-align: center;
+  font-style: 'Outfit', sans-serif;
+  font-size: 25px;
+}
+/* mapa */
+.mapa-iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  display: block;
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+  .menu-container {
+         display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      width: 100%;
+      gap: 10px;
+  }
+  .Imagotipo {
+    margin-bottom: 10px; 
+  }
+
+  .Imagotipo img {
+    height: 60px; 
+  }
+
+/* "formulario" */
+  
+  .contenido {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .formulario-agendamiento {
+    flex-direction: column;
+  }
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-container {
+    width: 500px;
+    padding: 20px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Imagotipo img {
+    height: 90px;
+  }
+}
