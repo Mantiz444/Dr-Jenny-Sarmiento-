@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra Jenny Sarmiento | Medicina Estética</title>
-  <link rel="stylesheet" href="contacto.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Dra Jenny Sarmiento | Medicina Estética</title>
+        <link rel="stylesheet" href="contacto.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Navegación -->
-  <nav class="navbar">
-    <img src="https://raw.githubusercontent.com/Mantiz444/Imagenes-web/089962be052ea95016ee041b67beb3a37cd23208/Imagotipo.svg"
-         alt="Imagotipo Dra Jenny Sarmiento" class="Imagotipo">
-    <ul>
-      <li><a href="inicio.html">inicio</a></li>
-      <li><a href="sobremi.html">sobre mí</a></li>
-      <li><a href="servicios.html">servicios</a></li>
-      <li><a href="contacto.html">contacto</a></li>
-    </ul>
-  </nav>
-  <section class="seccion-contacto">
-    <div class="contacto-imagen">
-      <img src="https://github.com/Mantiz444/Pagina-web/blob/main/Chicaa.png?raw=true" alt="Imagen de mujer salud estética">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      
+         <!-- Navegación -->
+            <nav class="navbar"> 
+                <div class="Imagotipo">
+                <img src="imagotipo-oficial.png"alt="Imagotipo Dra Jenny Sarmiento">
+            </div>
+            <div class="menu-container">
+                <a href ="index.html">Inicio</a>
+                <a href="sobremi.html">Sobre mí</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="testimonios.html">Testimonios</a>
+                <a href="contacto.html"class="btn-nav-contacto">Contacto</a>
+            </div>
+        </nav>
+  <!-- Formulario -->
+  <section class="formulario-agendamiento" id="contacto">
+    <div class="imagen">
+      <img src="Chicaa.png" alt="Mujer con maquillaje natural y hojas"/>
     </div>
-  
-    <div class="contacto-formulario">
-      <h2>Hablemos de tu bienestar...</h2>
-      <p>Agenda tu cita o consulta cualquier duda<br> estamos aquí para ayudarte.</p>
-  
-      <form>
-        <label for="nombre">Nombre Completo:</label>
-        <input type="text" id="nombre" name="nombre">
-  
-        <label for="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo">
-  
-        <label for="telefono">Número de Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono">
-  
-        <label for="mensaje">Mensaje o Motivo de Consulta:</label>
-        <textarea id="mensaje" name="mensaje" rows="3"></textarea>
-  
-        <button type="submit">Solicitar Información</button>
+
+    <div class="formulario">
+      <h2>Formulario de Agendamiento</h2>
+      <p>¡Solicita tu cita y descubre el tratamiento ideal para ti!</p>
+
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="tratamiento">Selecciona tu tratamiento:</label>
+        <div class="select-wrapper">
+        <select id="tratamiento" name="tratamiento" required>
+          <option value="">Selecciona una opción</option>
+          <option value="reconstruccion">Armonización facial</option>
+          <option value="reconstruccion">Toxina botulínica</option>
+          <option value="reconstruccion">Ácido hialurónico</option>
+          <option value="reconstruccion">Hilos tensores</option>
+          <option value="reconstruccion">Plasma rico en plaquetas</option>
+          <option value="reconstruccion">Mesoterapia capilar</option>
+          <option value="reconstruccion">Micropigmentación y microblading/option>
+          <option value="reconstruccion">Camuflaje de cicatrices</option>
+          <option value="reconstruccion">Reconstrucción de areolas</option>
+        </select>
+      </div>
+        <label for="mensaje">Mensaje adicional:</label>
+        <input type="text" id="mensaje" name="mensaje" />
+      <div class="contenedor-boton">
+        <button type="submit">Enviar</button>
+      </div>
       </form>
     </div>
   </section>
-  <section class="contact-info">
-    <div class="info-block">
-      <img src="https://github.com/Mantiz444/Pagina-web/blob/main/ultimos-iconos-1.png?raw=true" alt="Ícono mujer" class="icon">
-      <div class="text-content">
-        <h2>Información de Contacto</h2>
-        <p><strong>Teléfono:</strong> 3189004216</p>
-        <p><strong>Correo Electrónico:</strong> Dra_Jenny_S@gmail.com</p>
-        <p><strong>Dirección del Consultorio:</strong> Kr 13 #118-08, Bogotá<br>
-          (Stemwell Health - Regenerative Medicine)</p>
-        <p><strong>Horario de Atención:</strong></p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="socials">
-    <div class="info-block">
-      <img src="https://github.com/Mantiz444/Pagina-web/blob/main/ultimos-iconos2.png?raw=true alt="Ícono redes" class="icon">
-      <div class="text-content">
-        <h2>Redes Sociales</h2>
-        <p><strong>Instagram:</strong> drajennysarmiento_</p>
-        <p><strong>Facebook:</strong> jenny.a.sarmiento.9</p>
-        <p><strong>WhatsApp:</strong> 3189004216</p>
-        <p><strong>LinkedIn:</strong> drajennysarmiento_</p>
-      </div>
-    </div>
-  </section>
+</body>
+</html>
