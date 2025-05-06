@@ -25,499 +25,236 @@ h1, h2, h3 {
 
 /* Menú de navegación */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 50px 20px 50px;
-    background-color: #9bb18c;
-    width: 100%;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  background-color: #9bb18c;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
 }
 
 /* Imagotipo */
 .Imagotipo img {
-    height: 30px;
-    width:auto;
+  height: 30px;
+  width: auto;
 }
 
 /* Contenedor de los botones */
 .menu-container {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-grow: 1;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
 }
 
 /* Botones de navegación */
 .menu-container a {
-    text-decoration: none;
-    color: #1A2025;
-    font-family: 'Outfit', sans-serif;
-    font-size: 25px;
-    border-radius: 50px;
-    padding: 8px 15px;
-    white-space: nowrap;
+  text-decoration: none;
+  color: #1A2025;
+  font-family: 'Outfit', sans-serif;
+  font-size: 25px;
+  border-radius: 50px;
+  padding: 8px 15px;
+  white-space: nowrap;
 }
 .menu-container a:hover {
-    background-color: #f5f5dc; 
-    transition: all 0.3s ease;
+  background-color: #f5f5dc; 
+  transition: all 0.3s ease;
 }
 
 /* Botón de contacto */
 .btn-nav-contacto {
-    background-color: #D8A7B1;
-    border-radius: 50px;
-    font-size: 22px;
-    padding: 12px 25px;
-    color: #1A2025;
-    text-decoration: none;
-    margin-left: 20px;
-    box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
+  background-color: #D8A7B1;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 12px 25px;
+  color: #1A2025;
+  text-decoration: none;
+  margin-left: 20px;
+  box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
 }
 .btn-nav-contacto:hover {
-    background-color: #f5f5dc; 
-    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
+  background-color: #f5f5dc; 
+  box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
 }
-/* Carrusel de Banners */
-.carrusel {
-    width: 100%;
-    text-align: center;
-    max-width: none;
-    position: relative;
-    box-sizing: border-box;
-    background-color: #f5f5dc;
-  }
-  
-  .carrusel-contenido {
-    position: relative;
-  }
-  
-  .slide {
-    display: none;
-    transition: opacity 0.8s ease;
-  }
-  
-  .slide.activo {
-    display: block;
-    opacity: 1;
-    z-index: 1;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-  }
-  /* Botones de navegación para las imágenes del carrusel */
-.prev-button-imagen, .next-button-imagen {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #f5f5dc;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-    font-size: 24px;
-    transition: color 0.3s ease;
-    background: none;
-    outline: none;
-  }
-  
-  .prev-button-imagen {
-    left: 10px; 
-  }
-  
-  .next-button-imagen {
-    right: 10px; 
-  }
-  
-  .prev-button-imagen:hover, .next-button-imagen:hover {
-    color: #1A2025;
-  }
-  .prev-button-imagen:focus, .next-button-imagen:focus {
-    outline: none; 
+/* Banner 2 */
+.seccion-banner {
+  width: 100%;    
+  overflow: hidden;  
 }
-/* Sección de bienvenida */
-.contenedor-bienvenida {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 50px;
-    background-color: #f5f5dc;
-    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+.banner-2 img {
+  width: 100%;
+  display: block;
 }
-
-/* Imagen */
-.imagen-bienvenida {
-    width: 500px;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-/* Texto bienvenida */
-.texto-bienvenida {
-    max-width: 800px;
-    text-align: left;
-}
-
-.texto-bienvenida h1 {
-    font-size: 50px;
-    color: #1A2025;
-    font-family: 'MonteCarlo', cursive;
-}
-
-.texto-bienvenida p {
-    font-family: 'Outfit', sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight: normal;
-}
-.pregunta {
-    font-size: 25px; 
-    font-family: 'Outfit', sans-serif;
-    color: #D8A7B1;
-    font-weight: normal; 
-    margin-top: 20px;
-    text-align: center;
-}
-
-.btn-contacto {
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 15px;
-    padding: 15px 40px;
-    background-color: #d8a7b1;
-    color: #1A2025;
-    font-family: 'Outfit', sans-serif;
-    font-size: 20px;
-    box-shadow: 0 6px 12px rgba(216, 137, 166, 0.5);
-    border-radius: 50px;
-    border: 2px solid #d8a7b1;
-    text-align: center;
-    transition: 0.3s;
-    text-decoration: none
-}
-
-.btn-contacto:hover {
-    background-color: #f5f5dc;
-    border: 2px solid #E7C6C6;
-    color: #1A2025;
-    
-}
-
-/* Frase de inicio */
-.frase-inicio {
-    width: 100%;
+ 
+/* Intro servicios */
+  .intro-servicios {
+    background-color: #1A2025; 
+    padding: 60px 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    overflow: hidden;
-}
-
-.imagen-frase {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-/* Servicios */
-.treatments {
-    background-color: #1A2025;
-    text-align: center;
-    padding: 50px 20px;
-    color: #f5f5dc;
-}
-
-.treatments h2 {
-    font-size: 25px;
-    margin-bottom: 30px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: normal;
-    text-decoration:underline;
-    text-underline-offset: 12px;
-    text-decoration-thickness: 2px;
-}
-
-.treatments-container {
+  }
+  
+  .intro-contenido {
+    max-width: 1200px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 40px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.treatment {
-    max-width: 220px;
-    text-align: center;
-    padding: 10px;
-    flex: 1 1 220px;
-    min-height: 320px;
-}
-
-.treatment img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.treatment h3 {
-    font-size: 20px;
-    margin: 10px 0;
-    font-family: 'Outfit', sans-serif;
-    font-weight: normal;
-}
-
-.treatment p {
-    font-size: 18px;
-    font-family: 'Outfit', sans-serif;
-}
-.treatment-link img {
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.treatment-link:hover img {
-    transform: scale(1.1); 
-    filter: brightness(1.4)drop-shadow(0 0 12px #f8c5d5); 
-    cursor: pointer;
-}
-
-.btn-consulta {
-    font-family: 'Outfit', sans-serif;
-    background-color: #E8B8C5;
-    color: #1A2025;
-    padding: 12px 32px;
-    border: none;
-    border-radius: 50px;
-    font-size: 20px;
-    margin: 20px auto;
-    cursor: pointer;
-    white-space: nowrap;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    margin: 0 auto;
-    box-shadow: 0 6px 12px rgba(216, 137, 166, 0.5);
-    transition: background-color 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-consulta:hover {
-    background-color: #1A2025;
-    border: 2px solid #d8a7b1;
-    color: #f5f5dc;
-    box-shadow: 0 8px 16px rgba(216, 137, 166, 0.6);
-    
-}
-/* carrusel de testimonios*/
-.carrusel-testimonios {
-    font-family: 'Outfit', sans-serif;
-    font-weight: normal;
-    position: relative;
-    width: 100%;
-    min-height: 200px;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    background-color: #f5f5dc;
-    color: #1A2025;
-    text-align: center;
-    padding-top: 40px;
   }
-  .video-fondo {
-    position: absolute;
-    top: 0;
-    left: 0;
+  
+  .intro-imagen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
-    opacity: 0.5; 
-    pointer-events: none; 
+    max-width: 450px;
   }
   
-  .contenido-testimonios {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    padding: 20px 200px;
-    box-sizing: border-box;
-  }
-  
-  .contenido-testimonios h2 {
-    font-weight: normal;
-    font-size: 25px;
-    margin: 0 0 1.5rem 0;
+  .intro-texto {
+    max-width: 600px;
+    color: #f5f5dc;
     font-family: 'Outfit', sans-serif;
   }
 
-  /* Cada testimonio */
-.slider-textos {
-    position: relative;
-    height: auto;
+  .intro-texto h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f5f5dc;
   }
   
-  .slider-textos .testimonio {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    font-size: 20px;
-    line-height: 1.4;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+  .intro-texto p {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #f5f5dc;
+  }
+  /* servicios*/
+  .servicios {
+    background-color: #f5f5dc;
+    padding: 60px 40px;
+    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+  }
+  /* titulo*/
+  .titulo-seccion {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'MonteCarlo', cursive; 
+    color: #1A2025;
   }
   
-  .slider-textos .testimonio.activo {
-    display: block;
-    opacity: 1;
+  .bloque-servicio {
+    margin-bottom: 60px;
   }
-/* Estilo para el footer informativo */
-.informativo {
-    background-color: #F5F5DC; 
+   /* sub*/
+  .bloque-servicio h3 {
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 2px solid #1A2025;
+    margin-bottom: 30px;
+    color: #1A2025;
+  }
+  
+  .contenido-servicio {
+    font-family: 'Outfit', sans-serif;
     font-size: 20px;
-    padding: 50px 20px;
-    color: #1A2025; 
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: #1A2025;
+  }
+  
+  .contenido-servicio img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 40px; 
+  }
+  
+  .contenido-servicio ul {
+    max-width: 650px;
+    list-style: none;
+    padding: 0;
+    margin-left: 60px;
+  }
+  .contenido-servicio li strong {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .contenido-servicio li {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #1A2025;
+  }
+  /* seccion agendamiento */
+  .agenda-cita {
+    background-image: url('fondo-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
     box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
   }
   
-  /* Contenedor de las columnas */
-  .footer-contenido {
-    font-weight: normal;
-    font-family: 'Outfit', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  /* Quitar puntos de las listas */
-.columna ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  /* Estilo de cada columna */
-  .columna {
-    flex: 1;
-    margin: 0 20px;
-    min-width: 200px; /* Ajusta según necesites */
+  .agenda-cita h2 {
+    font-family: 'MonteCarlo', cursive;
+    font-size: 80px;
+    color: #1A2025;
+    margin-bottom: 40px;
   }
   
-  /* Títulos de cada columna */
-  .columna h3 {
-    font-family: 'Outfit', sans-serif;
-    font-weight: normal;
-    font-size: 25px;
-    margin-bottom: 10px;
-    color: #1A2025; /* Color del título */
-  }
-  
-  /* Estilo de los enlaces */
-  .columna a {
-    color: #1A2025; 
-    text-decoration: none;
-    display: block;
-    margin-bottom: 8px;
-  }
-  
-  /* Hover para enlaces */
-  .columna a:hover {
-    color: #d8a7b1; 
-    text-decoration: none;
-  }
-/* Estilo para el footer final */
-.footer-final {
+  .btn-agendar {
     background-color: #1A2025; 
-    color: #F5F5DC;
-    text-align: center;
-    padding: 20px 10px;
+    color: #f5f5dc;
+    padding: 12px 24px;
     font-family: 'Outfit', sans-serif;
-    font-size: 20px;
-    font-weight: 300
+    font-size: 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
   }
   
-  /* Estilo para los enlaces del footer final */
-  .footer-final a {
-    color: #F5F5DC;
-    text-decoration: underline;
-    margin: 0 5px;
+  .btn-agendar:hover {
+    border: 2px solid #1A2025;
+    background-color: #9bb18c;
+    color: #1A2025;
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
   }
-  
-  .footer-final a:hover {
-    color: #D8A7B1;
-    
-  }
-/* 3. Media Queries - Se colocan al final */
-/* Mobile First: Pantallas pequeñas */
-@media (max-width: 768px) {
-    /* NAV */
+  @media (max-width: 768px) {
     .navbar {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;
-        padding: 10px;
-        width: 100%;
-      }    
-    .menu-container {
-        display: flex;
-      flex-direction: column;
+      display: flex; 
+      flex-direction: column; 
       align-items: center;
       padding: 10px;
       width: 100%;
-      gap: 10px;
+    }
+    .menu-container {
+           display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        gap: 10px;
     }
     .Imagotipo {
-        margin-bottom: 10px; 
-      }
+      margin-bottom: 10px; 
+    }
   
     .Imagotipo img {
-      height: 60px;
-    }
-  
-    /* BIENVENIDA */
-    .contenedor-bienvenida {
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      text-align: center;
-    }
-  
-    .texto-bienvenida h1 {
-      font-size: 32px;
-    }
-  
-    .imagen-bienvenida {
-      width: 100%;
-      max-width: 300px;
-    }
-  
-    /* TESTIMONIOS */
-    .testimonios-container {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .testimonio {
-        flex: 0 0 100%;
-        scroll-snap-align: center;
-      width: 90%;
-      text-align: center;
+      height: 60px; 
     }
   }
-  
-  /* Desktop: Ajustes para pantallas grandes */
+
+
   @media (min-width: 1024px) {
     .menu-container {
       width: 500px;
@@ -525,29 +262,9 @@ h1, h2, h3 {
       flex-direction: row;
       justify-content: space-between;
     }
+    
   
     .Imagotipo img {
       height: 90px;
-    }
-  
-    .contenedor-bienvenida {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 60px;
-    }
-  
-    .texto-bienvenida h1 {
-      font-size: 64px;
-      text-align: left;
-    }
-  
-    .testimonios-container {
-      flex-direction: row;
-      justify-content: center;
-      gap: 40px;
-    }
-  
-    .testimonio {
-      width: 30%;
     }
   }
