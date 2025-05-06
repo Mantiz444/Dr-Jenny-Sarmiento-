@@ -1,181 +1,248 @@
-/*estilos generales*/
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+}
+
+.texto-bienvenida h1 {
+    font-family: 'MonteCarlo', cursive;
+}
+
+/* Menú de navegación */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  background-color: #9bb18c;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+}
+
+/* Imagotipo */
+.Imagotipo img {
+  height: 30px;
+  width: auto;
+}
+
+/* Contenedor de los botones */
+.menu-container {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+/* Botones de navegación */
+.menu-container a {
+  text-decoration: none;
+  color: #1A2025;
+  font-family: 'Outfit', sans-serif;
+  font-size: 25px;
+  border-radius: 50px;
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+.menu-container a:hover {
+  background-color: #f5f5dc; 
+  transition: all 0.3s ease;
+}
+
+/* Botón de contacto */
+.btn-nav-contacto {
+  background-color: #D8A7B1;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 12px 25px;
+  color: #1A2025;
+  text-decoration: none;
+  margin-left: 20px;
+  box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
+}
+.btn-nav-contacto:hover {
+  background-color: #f5f5dc; 
+  box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
+}
+
+
+  /* "formulario" */
+.formulario-agendamiento {
+  display: flex;
+  background-color: #f5f5dc; 
+  color: #1A2025; 
+  font-family: 'Outfit', sans-serif;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 450px;
+}
+
+.formulario {
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formulario h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #1A2025;
+}
+
+.formulario p {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+input, select textarea{
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #1A2025;
+  background-color: transparent;
+  color: #1A2025;
+  font-size: 22px;
+}
+select {
+  background-color: rgba(216, 167, 177, 0.2); 
+  color: #1A2025; 
+  border: 2px solid #1A2025;
+  border-radius: 12px;
+  padding: 12px 32px;
+  font-size: 20px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  appearance: none;
+}
+
+button {
+  background-color: #D8A7B1;
+  color: #1A2025;
+  border: none;
+  padding: 12px 32px;
+  font-size: 25px;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 50px; 
+  box-shadow: 0 6px 12px rgba(216, 137, 166, 0.5);
+  transition: background-color 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+  cursor: pointer;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #f5f5dc;
+  color: #1A2025;
+  box-shadow: 0 4px 16px #D8A7B1;
+  border: 2px solid #D8A7B1;
+}
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding-right: 40px; 
+  cursor: pointer;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
+  color: #D8A7B1; 
+}
+
+  @media (max-width: 768px) {
+    .navbar {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+      padding: 10px;
+      width: 100%;
+    }
+    .menu-container {
+           display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        gap: 10px;
+    }
+    .Imagotipo {
+      margin-bottom: 10px; 
+    }
   
-  /* Tipografía */
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+    .Imagotipo img {
+      height: 60px; 
+    }
+  /* "formulario" */
   
-  body {
-    font-family: "Playfair Display", serif;
-  }
-  
-  /* Menú de navegación */
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 5%;
-    background-color: #a8bba2;
-  }
-  
-  /* Imagotipo */
-  .Imagotipo {
-    max-width: 100%;
-    height:auto;
-    max-height: 80px;
-  }
-  
-  /*Lista del menu, inicio, servicios, acerca, testimonios*/
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-  }
-  
-  /*Para el texto*/
-  .navbar ul li {
-    margin: 0 15px;
-  }
-  
-  /* Estilo del texto*/
-  .navbar ul li a {
-    text-decoration: none;
-    color: #2b3740;
-    font-weight: bold;
-    font-size: 25px;
-  }
-  
-  /*Efecto del cursor (hover)*/
-  .navbar ul li a:hover {
-    color:#f5f5dc
-  }
-  .seccion-contacto {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #2c3a3a; 
-    padding: 40px;
-    color: #f1f1e6; 
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .contacto-imagen {
-    flex: 1 1 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .contacto-imagen img {
-    max-width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .contacto-formulario {
-    flex: 1 1 50%;
-    padding: 20px 40px;
-    display: flex;
+  .contenido {
     flex-direction: column;
-    justify-content: center;
+    padding: 20px;
   }
+  .formulario-agendamiento {
+    flex-direction: column;
+  }
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+  @media (min-width: 1024px) {
+    .menu-container {
+      width: 500px;
+      padding: 20px 40px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
   
-  .contacto-formulario h2 {
-    font-family: 'Dancing Script', cursive; 
-    font-size: 2.5rem;
-    color: #f1f1e6;
-    margin-bottom: 10px;
-  }
-  
-  .contacto-formulario p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    color: #f1f1e6;
-  }
-  
-  .contacto-formulario label {
-    margin: 10px 0 5px;
-    display: block;
-    font-weight: 500;
-  }
-  
-  .contacto-formulario input,
-  .contacto-formulario textarea {
-    width: 100%;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #f1f1e6;
-    color: #f1f1e6;
-    margin-bottom: 15px;
-  }
-  
-  .contacto-formulario input::placeholder,
-  .contacto-formulario textarea::placeholder {
-    color: #ccc;
-  }
-  
-  .contacto-formulario button {
-    background-color: #e4bfbf;
-    color: #2c3a3a;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 4px;
-    align-self: flex-start;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contacto-formulario button:hover {
-    background-color: #d6a9a9;
-  }
-  .contact-info {
-    background-color: #f3f3d5;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .socials {
-    background-color: #b9cbb4;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .info-block {
-    display: flex;
-    gap: 40px;
-    max-width: 900px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .icon {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #1f2c2e;
-    object-fit: contain;
-    padding: 10px;
-  }
-  
-  .text-content h2 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 32px;
-    color: #1f2c2e;
-    margin-bottom: 15px;
-  }
-  
-  .text-content p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #1f2c2e;
-    margin: 5px 0;
+    .Imagotipo img {
+      height: 90px;
+    }
   }
