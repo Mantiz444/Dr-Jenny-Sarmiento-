@@ -217,18 +217,22 @@ h1, h2, h3 {
 
 /* Frase de inicio */
 .frase-inicio {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    overflow: hidden;
+  background: url("Banner.png") center/cover no-repeat;
+  padding: 4rem 1rem;       /* Ajusta alto del banner */
+  text-align: center;
+  color: #1A2025;
 }
 
-.imagen-frase {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+.frase-inicio h1 {
+  font-family: 'MonteCarlo', cursive;
+  font-size: 3.125rem;
+  margin: 0;
+}
+
+.frase-inicio h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.875;
+  margin: 1rem 0 0;
 }
 
 /* Servicios */
@@ -385,6 +389,36 @@ h1, h2, h3 {
     display: block;
     opacity: 1;
   }
+  /* Botones de navegación para las imágenes del carrusel */
+.prev-button-testimonio, .next-button-testimonio {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1A2025;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.563rem;
+    transition: color 0.3s ease;
+    background: none;
+    outline: none;
+  }
+  
+  .prev-button-testimonio {
+    left: 10px; 
+  }
+  
+  .next-button-testimonio {
+    right: 10px; 
+  }
+  
+  .prev-button-testimonio:hover, .next-button-testimonio:hover {
+    color: #d8a7b1;
+  }
+  .prev-button-testimonio:focus, .next-button-testimonio:focus {
+    outline: none; 
+}
 /* Estilo para el footer informativo */
 .informativo {
     background-color: #F5F5DC; 
@@ -420,7 +454,7 @@ h1, h2, h3 {
   .columna h1 {
     font-family: 'MonteCarlo', cursive;
     font-weight: normal;
-    color:#9bb18c;
+    color:#1A2025;
     font-size: 3.125rem;
     margin-bottom: 10px;
   }
@@ -463,30 +497,39 @@ h1, h2, h3 {
 /* 3. Media Queries - Se colocan al final */
 /* Mobile First: Pantallas pequeñas */
 @media (max-width: 768px) {
-    /* NAV */
+
     .navbar {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;
-        padding: 1rem;
-        width: 100%;
-      }    
-    .menu-container {
-        display: flex;
+  flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .menu-container {
+      display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 10px;
+      padding: 10px 0;
       width: 100%;
       gap: 10px;
-    }
-    .Imagotipo {
-        margin-bottom: 10px; 
-      }
-  
-    .Imagotipo img {
-      height: 60px;
-    }
-  
+  }
+  .menu-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+  }
+   .menu-container li {
+    text-align: center;
+  }
+  .Imagotipo {
+    margin-bottom: 10px; 
+  }
+
+  .Imagotipo img {
+    height: 60px; 
+  }
+
     /* BIENVENIDA */
     .contenedor-bienvenida {
       flex-direction: column;
@@ -503,47 +546,65 @@ h1, h2, h3 {
       width: 100%;
       max-width: 300px;
     }
-  
-    /* TESTIMONIOS */
-     .carrusel-testimonios {
-    flex-direction: column;
-    min-height: auto;
-    height: auto;
+  .frase-inicio {
     padding: 2rem 1rem;
+  }
+  .frase-inicio h1 {
+    font-size: 1.75rem;
+  }
+  .frase-inicio p {
+    font-size: 1rem;
+  }
+    /* TESTIMONIOS */
+  .carrusel-testimonios {
+    position: relative;      /* sigue siendo padre */
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   .contenido-testimonios {
+    position: relative;
+    overflow: visible;       /* ahora todo fluye */
     padding: 1rem;
+    display: flex;           /* flujo en columna */
+    flex-direction: column;
+    align-items: center;
   }
 
+  /* Título estático y centrado */
+  .contenido-testimonios h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.2;
+    z-index: 2;
+  }
+
+  /* Aquí anulamos el absolute para que el texto baje debajo del H2 */
   .slider-textos {
-    position: static; 
+    position: static;        /* ya no superponemos */
+    width: 100%;
   }
 
   .slider-textos .testimonio {
-    position: static;
-    font-size: 1rem;
-    opacity: 1;
-    display: block;
-    margin-bottom: 1rem;
+    position: static;        /* flujo normal */
+    display: none;           /* oculto salvo .activo */
+    margin: 0 auto 1rem;     /* centrado y separación */
+    width: 90%;
+    max-width: 400px;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
   }
-    .testimonios-container {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .testimonio {
-        flex: 0 0 100%;
-        scroll-snap-align: center;
-      width: 90%;
-      text-align: center;
-    }
+
+  .slider-textos .testimonio.activo {
+    display: block;
+    opacity: 1;
   }
+}
+
   
   /* Desktop: Ajustes para pantallas grandes */
   @media (min-width: 1024px) {
