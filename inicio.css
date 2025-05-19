@@ -1,6 +1,3 @@
-/* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
 /* Estilos generales */
 * {
@@ -471,7 +468,7 @@ h1, h2, h3 {
         display: flex; 
         flex-direction: column; 
         align-items: center;
-        padding: 1 rem;
+        padding: 1rem;
         width: 100%;
       }    
     .menu-container {
@@ -508,6 +505,29 @@ h1, h2, h3 {
     }
   
     /* TESTIMONIOS */
+     .carrusel-testimonios {
+    flex-direction: column;
+    min-height: auto;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .contenido-testimonios {
+    padding: 1rem;
+  }
+
+  .slider-textos {
+    position: static; 
+  }
+
+  .slider-textos .testimonio {
+    position: static;
+    font-size: 1rem;
+    opacity: 1;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
     .testimonios-container {
         display: flex;
         overflow-x: auto;
