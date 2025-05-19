@@ -471,7 +471,7 @@ h1, h2, h3 {
         display: flex; 
         flex-direction: column; 
         align-items: center;
-        padding: 1rem;
+        padding: 1 rem;
         width: 100%;
       }    
     .menu-container {
@@ -487,7 +487,7 @@ h1, h2, h3 {
       }
   
     .Imagotipo img {
-      height: 1.25;
+      height: 60px;
     }
   
     /* BIENVENIDA */
@@ -499,11 +499,11 @@ h1, h2, h3 {
     }
   
     .texto-bienvenida h1 {
-      font-size: 1.875rem;
+      font-size: 32px;
     }
   
     .imagen-bienvenida {
-      width: 1.125rem;
+      width: 100%;
       max-width: 300px;
     }
   
@@ -535,7 +535,7 @@ h1, h2, h3 {
     }
   
     .Imagotipo img {
-      height: 2.5 rem;
+      height: 90px;
     }
   
     .contenedor-bienvenida {
@@ -545,7 +545,7 @@ h1, h2, h3 {
     }
   
     .texto-bienvenida h1 {
-      font-size: 3.75rem;
+      font-size: 64px;
       text-align: left;
     }
   
