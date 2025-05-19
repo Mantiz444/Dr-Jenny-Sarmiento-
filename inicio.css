@@ -231,7 +231,8 @@ h1, h2, h3 {
 
 .frase-inicio h2 {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.875;
+  font-size: 1.875rem;
+  font-weight: normal;
   margin: 1rem 0 0;
 }
 
@@ -546,13 +547,16 @@ h1, h2, h3 {
       width: 100%;
       max-width: 300px;
     }
+    /* frase */
   .frase-inicio {
     padding: 2rem 1rem;
+    background-size: cover;
+    background-position: center;
   }
   .frase-inicio h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
-  .frase-inicio p {
+  .frase-inicio h2 {
     font-size: 1rem;
   }
     /* TESTIMONIOS */
