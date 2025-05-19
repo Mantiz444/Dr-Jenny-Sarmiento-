@@ -1,15 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Carrusel de testimonios
-  let testimonios = document.querySelectorAll('.testimonio');
+  const testimonios = document.querySelectorAll('.testimonio');
+  const prevBtnTestimonio = document.querySelector('.prev-button-testimonio');
+  const nextBtnTestimonio = document.querySelector('.next-button-testimonio');
   let indice = 0;
 
-  function mostrarSiguienteTestimonio() {
-      testimonios[indice].classList.remove('activo');
-      indice = (indice + 1) % testimonios.length;
-      testimonios[indice].classList.add('activo');
+  function mostrarTestimonio(index) {
+    testimonios.forEach(testimonio => testimonio.classList.remove('activo'));
+    testimonios[index].classList.add('activo');
   }
 
-  setInterval(mostrarSiguienteTestimonio, 6000);
+  nextBtnTestimonio.addEventListener('click', function () {
+    indice = (indice + 1) % testimonios.length;
+    mostrarTestimonio(indice);
+  });
+
+  prevBtnTestimonio.addEventListener('click', function () {
+    indice = (indice - 1 + testimonios.length) % testimonios.length;
+    mostrarTestimonio(indice);
+  });
+
+  mostrarTestimonio(indice);
 
   // Carrusel de imágenes
   const slides = document.querySelectorAll(".slide");
