@@ -1,8 +1,3 @@
-/* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
-
 /* Estilos generales */
 * {
     margin: 0;
@@ -11,8 +6,6 @@
 
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 h1, h2, h3 {
@@ -25,92 +18,156 @@ h1, h2, h3 {
 
 /* Menú de navegación */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px 20px 50px;
-  background-color: #9bb18c;
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #9bb18c;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
 }
 
 /* Imagotipo */
 .Imagotipo img {
-  height: 30px;
-  width: auto;
+    height: 1.875rem;
+    width: auto;
 }
 
-/* Contenedor de los botones */
+/* Contenedor en general*/
 .menu-container {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
-/* Botones de navegación */
+/* da estilo a la lista de navegación.*/
+.menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+/* controla los ítems de la lista.*/
+.menu-container li {
+    display: flex;
+}
+
+/* da estilo a los enlaces */
 .menu-container a {
-  text-decoration: none;
-  color: #1A2025;
-  font-family: 'Outfit', sans-serif;
-  font-size: 25px;
-  border-radius: 50px;
-  padding: 8px 15px;
-  white-space: nowrap;
+    text-decoration: none;
+    color: #1A2025;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.563rem;
+    border-radius: 50px;
+    padding: 8px 15px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
 }
 .menu-container a:hover {
-  background-color: #f5f5dc; 
-  transition: all 0.3s ease;
+    background-color: #f5f5dc; 
 }
 
 /* Botón de contacto */
 .btn-nav-contacto {
-  background-color: #D8A7B1;
-  border-radius: 50px;
-  font-size: 22px;
-  padding: 12px 25px;
-  color: #1A2025;
-  text-decoration: none;
-  margin-left: 20px;
-  box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
+    background-color: #D8A7B1;
+    border-radius: 50px;
+    padding: 12px 25px;
+    color: #1A2025;
+    text-decoration: none;
+    margin-left: 20px;
+    box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
 }
 .btn-nav-contacto:hover {
-  background-color: #f5f5dc; 
-  box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
+    background-color: #f5f5dc; 
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
 }
-/*imagenes*/
-.imagen-con-sombra {
+/* Contenedor general */
+.seccion-banners {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cada banner ocupa toda la pantalla en ancho y alto relativo */
+.banner {
   position: relative;
   width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
 }
-
-.imagen-con-sombra::after {
-  content: "";
+/* Texto sobre el banner */
+.texto-banner {
+  font-family:'Outfit', sans-serif; 
   position: absolute;
-  inset: 0;
-  box-shadow: inset 0 0 60px rgba(36, 36, 33, 0.7);
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  padding: 0 20px;
 }
 
-.imagen-con-sombra img {
-  width: 100%;
-  display: block;
+/* Estilo específico del título */
+.texto-banner h2 {
+  text-decoration:underline;
+    text-underline-offset: 12px;
+  font-size: 1.875rem;
+  margin: 0;
+  font-weight: 200;
 }
 
-/* "Sobre mí" */
+/* Estilo específico del párrafo */
+.texto-banner p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  max-width: 800px;
+}
+/* Estilo específico de cada texto */
+.texto-banner.banner-1 {
+  width: 50%;
+  color: #1A2025;
+  top: 50%;
+  left: 20%;
+}
+
+.texto-banner.banner-2 {
+  width: 90%;
+  color: #f5f5dc;
+  top: 40%;
+  left: 20%;
+  transform: translateY(-30%);
+}
+
+.texto-banner.banner-3 {
+  width: 90%;
+  color: #1A2025;
+  bottom: 10%;
+  top: 40%;
+  left: 20%;
+  transform: none;
+}
+
+/* "Sobre mí" (otra seccion)*/
 .sobre-mi {
   background-color: #9bb18c; 
   color: #1A2025;
   padding: 20px 20px 60px 20px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 /* Contenido centrado pero a lo ancho */
 .contenido {
   max-width: 1200px;
   margin: 0 auto;
+  top: 50%;
 }
 
 /* Texto general */
@@ -145,6 +202,7 @@ h1, h2, h3 {
   line-height: 1.8;
   font-weight: 300;
   font-family: 'Outfit', sans-serif;
+  top: 50%;
 }
 
 /* frase */
@@ -290,21 +348,105 @@ button:hover {
   border: none;
   display: block;
 }
+/* Estilo para el footer informativo */
+.informativo {
+    background-color: #F5F5DC; 
+    font-size: 1.25rem;
+    padding: 50px 20px;
+    color: #1A2025; 
+    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+  }
+  
+  /* Contenedor de las columnas */
+  .footer-contenido {
+    font-weight: normal;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  /* Quitar puntos de las listas */
+.columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* Estilo de cada columna */
+  .columna {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px; /* Ajusta según necesites */
+  }
+  
+  /* Títulos de cada columna */
+  .columna h1 {
+    font-family: 'MonteCarlo', cursive;
+    font-weight: normal;
+    color:#1A2025;
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de los enlaces */
+  .columna a {
+    color: #1A2025; 
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Hover para enlaces */
+  .columna a:hover {
+    color: #d8a7b1; 
+    text-decoration: none;
+  }
+/* Estilo para el footer final */
+.footer-final {
+    background-color: #1A2025; 
+    color: #F5F5DC;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 300
+  }
+  
+  /* Estilo para los enlaces del footer final */
+  .footer-final a {
+    color: #F5F5DC;
+    text-decoration: underline;
+    margin: 0 5px;
+  }
+  
+  .footer-final a:hover {
+    color: #D8A7B1;
+    
+  }
 @media (max-width: 768px) {
-  .navbar {
-    display: flex; 
-    flex-direction: column; 
+ .navbar {
+  flex-direction: column;
     align-items: center;
     padding: 10px;
-    width: 100%;
   }
   .menu-container {
-         display: flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 10px;
+      padding: 10px 0;
       width: 100%;
       gap: 10px;
+  }
+  .menu-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+  }
+   .menu-container li {
+    text-align: center;
   }
   .Imagotipo {
     margin-bottom: 10px; 
@@ -313,6 +455,37 @@ button:hover {
   .Imagotipo img {
     height: 60px; 
   }
+  .banner {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .banner:nth-child(1) {
+  height: 500px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+  .texto-banner.banner-2,
+.texto-banner.banner-3 {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  width: 90%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.texto-banner.banner-2 h2,
+.texto-banner.banner-3 h2 {
+  font-size: 1.3rem;
+}
+
+.texto-banner.banner-2 p,
+.texto-banner.banner-3 p {
+  font-size: 1rem;
+  max-width: 100%;
+}
 
 /* "formulario" */
   
@@ -328,6 +501,7 @@ button:hover {
     height: auto;
   }
 }
+
 @media (min-width: 1024px) {
   .menu-container {
     width: 500px;
