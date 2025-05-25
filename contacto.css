@@ -1,8 +1,3 @@
-/* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
-
 /* Estilos generales */
 * {
     margin: 0;
@@ -11,8 +6,6 @@
 
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 h1, h2, h3 {
@@ -25,62 +18,99 @@ h1, h2, h3 {
 
 /* Menú de navegación */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px 20px 50px;
-  background-color: #9bb18c;
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #9bb18c;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
 }
 
 /* Imagotipo */
 .Imagotipo img {
-  height: 30px;
-  width: auto;
+    height: 1.875rem;
+    width: auto;
 }
 
-/* Contenedor de los botones */
+/* Contenedor en general*/
 .menu-container {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
-/* Botones de navegación */
+/* da estilo a la lista de navegación.*/
+.menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+/* controla los ítems de la lista.*/
+.menu-container li {
+    display: flex;
+}
+
+/* da estilo a los enlaces */
 .menu-container a {
-  text-decoration: none;
-  color: #1A2025;
-  font-family: 'Outfit', sans-serif;
-  font-size: 25px;
-  border-radius: 50px;
-  padding: 8px 15px;
-  white-space: nowrap;
+    text-decoration: none;
+    color: #1A2025;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.563rem;
+    border-radius: 50px;
+    padding: 8px 15px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
 }
 .menu-container a:hover {
-  background-color: #f5f5dc; 
-  transition: all 0.3s ease;
+    background-color: #f5f5dc; 
 }
 
 /* Botón de contacto */
 .btn-nav-contacto {
-  background-color: #D8A7B1;
-  border-radius: 50px;
-  font-size: 22px;
-  padding: 12px 25px;
-  color: #1A2025;
-  text-decoration: none;
-  margin-left: 20px;
-  box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
+    background-color: #D8A7B1;
+    border-radius: 50px;
+    padding: 12px 25px;
+    color: #1A2025;
+    text-decoration: none;
+    margin-left: 20px;
+    box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
 }
 .btn-nav-contacto:hover {
-  background-color: #f5f5dc; 
-  box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
+    background-color: #f5f5dc; 
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
+}
+/* Introducción */
+.contacto {
+  background-color: #D8A7B1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
 }
 
+.contacto h1 {
+  font-family: 'MonteCarlo', cursive;
+  font-size: 3.125rem;
+  margin: 0 auto;
+  color: #1A2025;
+}
+
+.contacto p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: none;
+  text-align: left;
+  margin: 0 auto;
+  color: #1A2025;
+}
 
   /* "formulario" */
 .formulario-agendamiento {
@@ -107,14 +137,14 @@ h1, h2, h3 {
 
 .formulario h2 {
   font-family: 'Outfit', sans-serif;
-  font-size: 50px;
+  font-size: 1.875rem;
   margin-bottom: 10px;
   color: #1A2025;
 }
 
 .formulario p {
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -194,30 +224,291 @@ button:hover {
   font-size: 18px;
   color: #D8A7B1; 
 }
+/* Sección título */
+.faq-titulo {
+  background-color: #1A2025; 
+  padding: 0.5rem 2rem;    
+  margin-bottom: 0; 
+   border-bottom: 2px solid #D8A7B1;        
+}
+
+.faq-titulo h2 {
+  color: #F5F5DC;
+  font-size: 3.125rem;
+  font-family: 'MonteCarlo', cursive;
+  margin: 0;               
+  font-weight: 700;
+  text-align: center;
+}
+/* "Contacto" */
+.info-contacto {
+  padding: 2rem;
+  background-color: #1A2025; 
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Cada fila (.item) con icono + contenido */
+.info-contacto .item {
+  border-bottom: 2px solid #D8A7B1;
+  padding-bottom: 3rem;   
+  margin-bottom: 3rem;
+  padding-left: 5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap; /* para que baje a columna en móviles */
+}
+
+/* Icono a la izquierda */
+.info-contacto .item > img {
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+/* Listas sin viñetas ni márgenes */
+.info-contacto ul {
+  padding-left: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Separación entre cada elemento de la lista */
+.info-contacto li {
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces limpios, color base y efecto hover */
+.info-contacto a {
+  display: inline-block;
+  color: #D8A7B1;            /* color base */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-contacto a:hover {
+  color: #f5f5dc;  
+  text-shadow: 0 6px 12px rgba(216, 137, 166, 0.5);     
+}
+.info-contacto .mapa-iframe {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 0;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(216, 137, 166, 0.5); 
+}
+
+/* Ítem 1: Contactos y redes   */
+.info-contacto .item:nth-child(1) .columna {
+  flex: 1;
+}
+/* Título “Contacto” */
+.info-contacto .item:nth-child(1) .columna:first-of-type h1 {
+  padding-left: 2rem;
+  font-weight: normal;
+  font-size: 1.875rem;
+  color: #F5F5DC;
+  margin-bottom: 1rem;
+  text-decoration:underline;
+text-underline-offset: 12px;
+text-decoration-thickness: 2px;
+}
+/* Lista WhatsApp/Gmail/Dirección */
+.info-contacto .item:nth-child(1) .columna:first-of-type a {
+  font-size: 1.563rem;
+  line-height: 1.4;
+}
+/* Título “Dr. Jenny Sarmiento” */
+.info-contacto .item:nth-child(1) .columna:last-of-type h1 {
+  padding-left: 2rem;
+  font-weight: normal;
+  font-size: 1.875rem;
+  color: #F5F5DC;
+  margin-bottom: 1rem;
+  text-decoration:underline;
+text-underline-offset: 12px;
+text-decoration-thickness: 2px;
+}
+/* Lista redes sociales */
+.info-contacto .item:nth-child(1) .columna:last-of-type a {
+  font-size: 1.563rem;
+  line-height: 1.4;
+}
+
+/* Ítem 2: Dirección y mapa     */
+.info-contacto .item:nth-child(2) .texto {
+  font-size: 1.563rem;
+  flex: 1;
+}
+
+/* Título “Dirección” */
+.info-contacto .item:nth-child(2) .texto h2 {
+  font-size: 1.875rem;
+  padding-left: 2rem;
+  text-decoration: none;
+  color: #F5F5DC;
+  margin-bottom: 1rem;
+  text-decoration:underline;
+text-underline-offset: 12px;
+text-decoration-thickness: 2px;
+}
+/* Párrafo descriptivo */
+.info-contacto .item:nth-child(2) .texto p:not(.direccion):not(.horario) {
+  padding-left: 2rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #F5F5DC;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+/* Línea de Dirección */
+.info-contacto .item:nth-child(2) .texto .direccion {
+  padding-left: 2rem;
+  font-size: 1.875rem;
+  color: #D8A7B1;
+  margin-bottom: 1rem;
+}
+/* Línea de Horario */
+.info-contacto .item:nth-child(2) .texto .horario {
+  padding-left: 2rem;
+  font-size: 1.25rem;
+  color: #9bb18c;
+  line-height: 1.5;
+}
+
+/* Ítem 3: FAQ                  */
+.info-contacto .item:nth-child(3) .texto {
+  flex: 1;
+  padding-left: 2rem;
+}
+/* Título “Preguntas frecuentes (FAQ)” */
+.info-contacto .item:nth-child(3) .texto h2 {
+  font-size: 1.875rem;
+  padding-left: 2rem;
+  color: #F5F5DC;
+  margin-bottom: 1rem;
+  text-decoration:underline;
+text-underline-offset: 12px;
+text-decoration-thickness: 2px;
+}
+/* Detalles / preguntas */
+.info-contacto .item:nth-child(3) summary {
+  font-size: 1.563rem;
+  padding-left: 1rem;
+  color: #F5F5DC;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+/* Contenedor del detalle (cada pregunta con recuadro) */
+.info-contacto .item:nth-child(3) details {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #1A2025; /* Fondo acorde con tu sección */
+  transition: background-color 0.3s ease;
+}
+
+/* Cambio de fondo cuando está abierto */
+.info-contacto .item:nth-child(3) details[open] {
+  background-color: #2a3138;
+}
+/* Respuestas dentro de <p> */
+.info-contacto .item:nth-child(3) .texto .faq p {
+  padding-left: 2rem;
+  font-size: 1.25rem;
+  color: #D8A7B1;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Ajuste del iframe (mapa) para que sea 100% ancho del contenedor */
+.info-contacto .mapa-iframe {
+  width: 100%;
+  max-width: 600px;         
+  height: auto;
+  border: 0;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
+}
+/* Estilo para el footer final */
+.footer-final {
+    background-color: #1A2025; 
+    color: #F5F5DC;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300
+  }
+  
+  /* Estilo para los enlaces del footer final */
+  .footer-final a {
+    color: #F5F5DC;
+    text-decoration: underline;
+    margin: 0 5px;
+  }
+  
+  .footer-final a:hover {
+    color: #D8A7B1;
+    
+  }
+
+
+/* Responsive: en pantallas pequeñas cada .item baja a columna */
+@media (max-width: 600px) {
+  .info-contacto .item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-contacto .item > img {
+    margin-bottom: 1rem;
+  }
+  .info-contacto .columna,
+  .info-contacto .texto {
+    width: 100%;
+  }
+}
 
   @media (max-width: 768px) {
     .navbar {
-      display: flex; 
-      flex-direction: column; 
+  flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .menu-container {
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      padding: 10px;
+      padding: 10px 0;
       width: 100%;
-    }
-    .menu-container {
-           display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        width: 100%;
-        gap: 10px;
-    }
-    .Imagotipo {
-      margin-bottom: 10px; 
-    }
-  
-    .Imagotipo img {
-      height: 60px; 
-    }
+      gap: 10px;
+  }
+  .menu-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+  }
+   .menu-container li {
+    text-align: center;
+  }
+  .Imagotipo {
+    margin-bottom: 10px; 
+  }
+
+  .Imagotipo img {
+    height: 60px; 
+  }
   /* "formulario" */
   
   .contenido {
