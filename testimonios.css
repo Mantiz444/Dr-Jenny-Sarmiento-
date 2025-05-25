@@ -1,8 +1,3 @@
-/* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
-
 /* Estilos generales */
 * {
     margin: 0;
@@ -11,8 +6,6 @@
 
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 h1, h2, h3 {
@@ -25,60 +18,71 @@ h1, h2, h3 {
 
 /* Menú de navegación */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px 20px 50px;
-  background-color: #9bb18c;
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #9bb18c;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
 }
 
 /* Imagotipo */
 .Imagotipo img {
-  height: 30px;
-  width: auto;
+    height: 1.875rem;
+    width: auto;
 }
 
-/* Contenedor de los botones */
+/* Contenedor en general*/
 .menu-container {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
-/* Botones de navegación */
+/* da estilo a la lista de navegación.*/
+.menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+/* controla los ítems de la lista.*/
+.menu-container li {
+    display: flex;
+}
+
+/* da estilo a los enlaces */
 .menu-container a {
-  text-decoration: none;
-  color: #1A2025;
-  font-family: 'Outfit', sans-serif;
-  font-size: 25px;
-  border-radius: 50px;
-  padding: 8px 15px;
-  white-space: nowrap;
+    text-decoration: none;
+    color: #1A2025;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.563rem;
+    border-radius: 50px;
+    padding: 8px 15px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
 }
 .menu-container a:hover {
-  background-color: #f5f5dc; 
-  transition: all 0.3s ease;
+    background-color: #f5f5dc; 
 }
 
 /* Botón de contacto */
 .btn-nav-contacto {
-  background-color: #D8A7B1;
-  border-radius: 50px;
-  font-size: 22px;
-  padding: 12px 25px;
-  color: #1A2025;
-  text-decoration: none;
-  margin-left: 20px;
-  box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
+    background-color: #D8A7B1;
+    border-radius: 50px;
+    padding: 12px 25px;
+    color: #1A2025;
+    text-decoration: none;
+    margin-left: 20px;
+    box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
 }
 .btn-nav-contacto:hover {
-  background-color: #f5f5dc; 
-  box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
+    background-color: #f5f5dc; 
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
 }
 /* video */
 .video-banner {
@@ -97,28 +101,114 @@ h1, h2, h3 {
     object-fit: cover; 
   }
   /* banners */
-  .banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
-  }
-  /* textos entre banners */
-.texto-intermedio {
-    background-color: #9bb18c;
-    padding: 60px 40px;
-    text-align: center;
-    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
-  }
-  
-  .texto-intermedio p {
-    
-    font-size: 25px;
-    color: #1A2025;
-    line-height: 1.5;
-    margin: 0;
-  }
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenido de texto encima de la imagen */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1A2025; /* puedes cambiar a otro color si lo necesitas */
+  text-align: center;
+  z-index: 2;
+  padding: 0 20px; /* pequeño margen lateral para móviles */
+}
+
+.banner-content h2 { 
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+/* Testimonio de santiago*/
+.banner-santiago .banner-content {
+  left: 30%;
+  transform: translate(-30%, -50%);
+  text-align: left;
+  position: absolute;
+  top: 50%;
+}
+.banner-santiago .banner-content h3 {
+font-size: 1.75rem;
+  color: #1A2025;
+  margin-bottom: 15px;
+}
+
+.banner-santiago .banner-content p {
+  font-size: 1.25rem;
+  color: #1A2025;
+   max-width: 500px;
+   line-height: 1.6;
+}
+/* Testimonio de Marcela */
+.banner-marcela .banner-content {
+  transform: translate(-30%, -50%);
+  text-align: left;
+  position: absolute;
+  top: 50%;
+}
+.banner-marcela .banner-content h3 {
+font-size: 1.75rem;
+  color: #1A2025;
+  margin-bottom: 15px;
+}
+.banner-marcela .banner-content p {
+  font-size: 1.25rem;
+  color: #1A2025;
+   max-width: 500px;
+   line-height: 1.6;
+}
+
+/* Testimonio de Valentina */
+.banner-valentina .banner-content {
+  transform: translate(-30%, -50%);
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+.banner-valentina .banner-content h3 {
+ font-size: 1.75rem;
+  color: #1A2025;
+  margin-bottom: 15px;
+}
+
+.banner-valentina .banner-content p {
+  font-size: 1.25rem;
+  color: #1A2025;
+   max-width: 500px;
+   line-height: 1.6;
+}
+
+/* textos entre banners */
+.texto-intermedio {
+  background-color: #9bb18c;
+  font-family: 'Outfit', sans-serif;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+}
+
+.texto-intermedio p {
+  font-size: 1.563rem;
+  color: #1A2025;
+  line-height: 1.5;
+  margin: 0;
+}
 /* mensaje dr jenny */
   .mensaje-container {
     display: flex;
@@ -126,7 +216,7 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     padding: 60px 40px;
-    background-color: #f5f5dc;
+    background-color: #1A2025;
     gap: 40px;
     box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
   }
@@ -139,40 +229,40 @@ h1, h2, h3 {
   }
   
   .mensaje-texto h2 {
-    font-size: 25px;
+    font-size: 1.875rem;
     margin-bottom: 20px;
-    color: #1A2025;
+    color: #f5f5dc;
     font-family: 'Outfit', sans-serif;
   }
   
   .mensaje-texto p {
     font-family: 'Outfit', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.6;
     margin-bottom: 25px;
-    color: #1A2025;
+    color: #f5f5dc;
   }
   
   .mensaje-pregunta h3 {
-    font-size: 23px;
+    font-size: 1.75rem;
     margin-bottom: 8px;
-    color: #1A2025;
+    color: #f5f5dc;
   }
   
   .mensaje-pregunta p {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
-    text-decoration-color: #1A2025;
+    text-decoration-color: #f5f5dc;
     margin-bottom: 30px;
-    color: #1A2025;
+    color: #f5f5dc;
   }
   
   /* Botón de WhatsApp */
   .btn-hablemos {
     font-family: 'Outfit', sans-serif;
-    font-size: 25px;
+    font-size: 1.563rem;
     display: inline-block;
     background-color: #D8A7B1;
     color: #1A2025;
@@ -183,8 +273,8 @@ h1, h2, h3 {
   }
   
   .btn-hablemos:hover {
-    background-color: #f5f5dc;
-    color: #1A2025;
+    background-color: #1A2025;
+    color: #f5f5dc;
     border: 2px solid #D8A7B1;
     box-shadow: 0 4px 12px rgba(249, 194, 209, 0.6);
   }
@@ -193,17 +283,93 @@ h1, h2, h3 {
   .mensaje-imagen {
     flex: 1;
     min-width: 250px;
-    margin-left: -200px;
+    margin-left: 0px;
     display: flex;
   justify-content: center;
   align-items: flex-end;
+  height: 100%;
   overflow: hidden;
   }
   
   .mensaje-imagen img {
-    max-width: 100%;
+    max-width: 600px;
     height: auto;
     display: block;
+  }
+    /* Estilo para el footer informativo */
+.informativo {
+    background-color: #F5F5DC; 
+    font-size: 1.25rem;
+    padding: 50px 20px;
+    color: #1A2025; 
+    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+  }
+  
+  /* Contenedor de las columnas */
+  .footer-contenido {
+    font-weight: normal;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  /* Quitar puntos de las listas */
+.columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* Estilo de cada columna */
+  .columna {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px; /* Ajusta según necesites */
+  }
+  
+  /* Títulos de cada columna */
+  .columna h1 {
+    font-family: 'MonteCarlo', cursive;
+    font-weight: normal;
+    color:#1A2025;
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de los enlaces */
+  .columna a {
+    color: #1A2025; 
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Hover para enlaces */
+  .columna a:hover {
+    color: #d8a7b1; 
+    text-decoration: none;
+  }
+/* Estilo para el footer final */
+.footer-final {
+    background-color: #1A2025; 
+    color: #F5F5DC;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300
+  }
+  
+  /* Estilo para los enlaces del footer final */
+  .footer-final a {
+    color: #F5F5DC;
+    text-decoration: underline;
+    margin: 0 5px;
+  }
+  
+  .footer-final a:hover {
+    color: #D8A7B1;
+    
   }
 
   @media (max-width: 768px) {
@@ -229,31 +395,81 @@ h1, h2, h3 {
     .Imagotipo img {
       height: 60px; 
     }
+    /* Video */
+  .video-banner {
+    height: auto;
+    overflow: hidden;
+  }
+
+  #video-banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  /* Banners*/
+  .banner-content {
+    /* ya tenías esto para centrar, lo mantenemos */
+    width: 90% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    padding: 0 10px !important;
+  }
+
+  .banner-content h2 {
+    /* Reducimos un poco el espacio entre líneas y el margen inferior */
+    line-height: 1.2 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .banner-content p {
+    /* Menor interlineado y tamaño algo más pequeño */
+    line-height: 1.3 !important;
+    max-width: 90% !important;
+  }
+.banner-santiago .banner-content,
+  .banner-marcela .banner-content,
+  .banner-valentina .banner-content {
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center !important;
+    padding: 0 10px;
+  }
+
+  .banner-santiago .banner-content h2,
+  .banner-marcela .banner-content h2,
+  .banner-valentina .banner-content h2 {
+    font-size: 15px !important;
+  }
+
+  .banner-santiago .banner-content p,
+  .banner-marcela .banner-content p,
+  .banner-valentina .banner-content p {
+    font-size: 12px !important;
+    max-width: 90% !important;
+  }
+
     /* texto jenny */
     .mensaje-container {
-        flex-direction: column;
-        padding: 40px 20px;
-        text-align: center;
-      }
-    
-      .mensaje-texto,
-      .mensaje-imagen {
-        max-width: 100%;
-      }
-    
-      .mensaje-texto h2 {
-        font-size: 1.6rem;
-      }
-    
-      .mensaje-pregunta h3 {
-        font-size: 1.1rem;
-      }
-    
-      .btn-hablemos {
-        padding: 12px 24px;
-        font-size: 1rem;
-      }
+    flex-direction: column;
+    padding: 40px 20px;
   }
+
+  .mensaje-texto {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .mensaje-imagen {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .mensaje-imagen img {
+    max-width: 300px;
+  }
+}
+
 
 
   @media (min-width: 1024px) {
