@@ -12,25 +12,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body>
-      
-         <!-- Navegación -->
+      <!-- Navegación -->
             <nav class="navbar"> 
                 <div class="Imagotipo">
-                <img src="imagotipo-oficial.png"alt="Imagotipo Dra Jenny Sarmiento">
+                <img src="imagotipo-oficial.png"alt="Imagotipo Dra Jenny Sarmiento medicina estética y micropigmentación. ">
             </div>
             <div class="menu-container">
-                <a href ="index.html">Inicio</a>
-                <a href="sobremi.html">Sobre mí</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="testimonios.html">Testimonios</a>
-                <a href="contacto.html"class="btn-nav-contacto">Contacto</a>
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="contacto.html"class="btn-nav-contacto">Contacto</a></li>
+                </ul>
             </div>
         </nav>
-<!-- banner -->
-        <section class="seccion-banner">
-          <div class="banner-2">
-            <img src="Banner-2.png" alt="Banner 2">
-          </div>
+<!-- Sección de frase inspiradora -->
+           <section class="frase-inicio">
+            <h1>Tu esencia, nuestra inspiración.</h1>
+            <p>Cada tratamiento es 100% personalizado, diseñado según las necesidades y objetivos de cada persona. Creemos en resaltar el poder de la belleza natural, realzando lo mejor de cada rostro y cuerpo con sutileza, cuidado y profesionalismo. Nuestra prioridad es que te sientas cómodo, seguro y auténticamente tú.</p>
         </section>
 <!-- Intro -->
   <section class="intro-servicios">
@@ -47,30 +47,39 @@
     </div>
   </section>
   
-
+ <!-- 1. Servicos seccion -->
   <section class="servicios">
     <h2 class="titulo-seccion">Nuestros Servicios</h2>
   
     <!-- 1. Armonización Facial -->
-    <div class="bloque-servicio">
-      <h3>Armonización Facial</h3>
-      <div class="contenido-servicio">
-        <img src="Chica 1.png" alt="Armonización facial" />
-        <ul>
-          <li><strong>Toxina Botulínica (Botox):</strong> Relaja líneas de expresión y previene el envejecimiento a temprana edad.</li>
-          <li><strong>Ácido Hialurónico:</strong> Relleno para labios, pómulos, ojeras y perfilado facial perfecto para renovarte.</li>
-          <li><strong>Plasma Rico en Plaquetas (PRP):</strong> Estimula la regeneración celular para una piel más luminosa.</li>
-          <li><strong>Hidratación Facial Inyectable:</strong> Tratamiento profundo que nutre y revitaliza la piel.</li>
-          <li><strong>Skin Care Personalizado:</strong> Evaluación y recomendación de productos para el cuidado facial.</li>
-        </ul>
-      </div>
+<div class="bloque-servicio">
+  <h3>Armonización Facial</h3>
+  <div class="contenido-servicio">
+    <div class="carrusel" id="carrusel1"
+         data-images='["Chica 1.png","Facial1.png","Facial2.png"]'>
+      <img src="Chica 1.png" alt="Armonización facial" />
+      <button class="anterior">❮</button>
+      <button class="siguiente">❯</button>
     </div>
+    <ul>
+      <li><strong>Toxina Botulínica (Botox):</strong> Relaja líneas de expresión y previene el envejecimiento a temprana edad.</li>
+      <li><strong>Ácido Hialurónico:</strong> Relleno para labios, pómulos, ojeras y perfilado facial perfecto para renovarte.</li>
+      <li><strong>Plasma Rico en Plaquetas (PRP):</strong> Estimula la regeneración celular para una piel más luminosa.</li>
+      <li><strong>Hidratación Facial Inyectable:</strong> Tratamiento profundo que nutre y revitaliza la piel.</li>
+      <li><strong>Skin Care Personalizado:</strong> Evaluación y recomendación de productos para el cuidado facial.</li>
+    </ul>
+  </div>
+</div>
   
     <!-- 2. Microblading y Micropigmentación -->
-    <div class="bloque-servicio">
+<div class="bloque-servicio">
       <h3>Microblading y Micropigmentación</h3>
       <div class="contenido-servicio">
-        <img src="Chica 2.png" alt="Microblading y micropigmentación" />
+        <div class="carrusel" id="carrusel2" data-images='["Chica 2.png","Microblanding1.png","Microblanding2.png"]'>
+          <img src="Chica 2.png" alt="Microblading y micropigmentación"/>
+          <button class="anterior">❮</button>
+          <button class="siguiente">❯</button>
+        </div>
         <ul>
           <li><strong>Cejas hiperrealistas:</strong> Diseño natural para mayor definición y expresión y/o corrección de procedimientos mal realizados.</li>
           <li><strong>Micropigmentación de labios:</strong> Realza el color y la forma de tus labios inyecciones de vitaminas o micropigmentación.</li>
@@ -81,10 +90,14 @@
     </div>
   
     <!-- 3. Rejuvenecimiento y Cuidado de la Piel -->
-    <div class="bloque-servicio">
+ <div class="bloque-servicio">
       <h3>Rejuvenecimiento y Cuidado de la Piel</h3>
       <div class="contenido-servicio">
-        <img src="Chica 3.png" alt="Rejuvenecimiento" />
+        <div class="carrusel" id="carrusel3" data-images='["Chica 3.png","Rejuvenecimiento1.png","Rejuvenecimiento2.png"]'>
+          <img src="Chica 3.png" alt="Rejuvenecimiento"/>
+          <button class="anterior">❮</button>
+          <button class="siguiente">❯</button>
+        </div>
         <ul>
           <li><strong>Peelings Químicos:</strong> Eliminación de células muertas para una piel más uniforme radiante y saludable.</li>
           <li><strong>Mesoterapia Facial:</strong> Vitaminas y activos que revitalizan la piel desde adentro, proceso continúo en cuidado de la piel.</li>
@@ -98,19 +111,66 @@
     <div class="bloque-servicio">
       <h3>Manejo de Alopecia</h3>
       <div class="contenido-servicio">
-        <img src="Hombre 1.png" alt="Alopecia" />
+        <div class="carrusel" id="carrusel4" data-images='["Hombre 1.png","Alopecia1.png","Alopecia2.png"]'>
+          <img src="Hombre 1.png" alt="Alopecia"/>
+          <button class="anterior">❮</button>
+          <button class="siguiente">❯</button>
+        </div>
         <ul>
           <li><strong>Mesoterapia Capilar:</strong> Nutrición profunda para estimular el crecimiento del cabello y procedimientos para fomentar su hidratación.</li>
-          <li><strong>Plasma Rico en Plaquetas Capilar:</strong> Regeneración del cuero cabelludo para fortalecer el folículo y evitar perdida a largo plazo.</li>
+          <li><strong>Plasma Rico en Plaquetas Capilar:</strong> Regeneración del cuero cabelludo para fortalecer el folículo y evitar pérdida a largo plazo.</li>
           <li><strong>Tratamiento Farmacológico:</strong> Soluciones médicas adaptadas a cada paciente, todos los casos tienen una historia diferente.</li>
         </ul>
       </div>
     </div>
-  </section>
-
+</section>
+<!-- La otra seccion -->
   <section class="agenda-cita">
     <h2>¡Agenda tu cita ya!</h2>
     <a href="contacto.html" class="btn-agendar">Contáctame ahora</a>
   </section>
+
+  <!-- Footer informativo-->
+  <section class="informativo">
+    <div class="footer-contenido">
+      <div class="columna">
+        <h1>Contacto</h1>
+        <ul>
+          <li><a href="https://api.whatsapp.com/send/?phone=3189004216&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">WhatsApp: +57 3189004216</a></li>
+          <li><a href="mailto:Dra_Jenny_S@gmail.com" target="_blank" rel="noopener noreferrer">Gmail: Dra_Jenny_S@gmail.com</a></li>
+          <li><a href="https://maps.app.goo.gl/RKcdWTULdxTowajr6" target="_blank" rel="noopener noreferrer">Dirección: Kr 13 #118-08, Bogotá</a></li>
+        </ul>
+      </div>
+  
+      <div class="columna">
+        <h1>Dr. Jenny Sarmiento</h1>
+        <ul>
+          <li><a href="https://www.facebook.com/jenny.a.sarmiento.9"target="_blank" rel="noopener noreferrer">Facebook:jenny.a.sarmiento.9</a></li>
+          <li><a href="https://www.instagram.com/drajennysarmiento_/#"target="_blank" rel="noopener noreferrer">Instagram: @drajennysarmiento_</a></li>
+          <li><a href="https://www.tiktok.com/@drajennysarmiento"target="_blank" rel="noopener noreferrer">TikTok:drajennysarmiento</a></li>
+        </ul>
+      </div>
+  
+      <div class="columna">
+        <h1>Servicios</h1>
+        <ul>
+          <li><a href="servicios.html">Armonización Facial</a></li>
+          <li><a href="servicios.html">Microblading y Micropigmentación</a></li>
+          <li><a href="servicios.html">Rejuvenecimiento y Cuidado de la Piel</a></li>
+          <li><a href="servicios.html">Manejo de Alopecia</a></li>
+        </ul>
+      </div>
+    </div>
+</section>
+<!-- Footer final -->
+<footer class="footer-final">
+    <p>
+      © 2024 Dra. Jenny |
+      <a href="#">Todos los derechos reservados</a> |
+      <a href="#">Términos y Condiciones</a> |
+      <a href="#">Política de Privacidad</a>
+    </p>
+  </footer>
+  <script src="carrusel.js" defer></script>
 </body>
 </html>
