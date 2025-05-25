@@ -171,7 +171,7 @@ h1, h2, h3 {
 }
 
 .texto-bienvenida h1 {
-    font-size: 3.125rem;
+    font-size: 50px; 
     color: #1A2025;
     font-family: 'MonteCarlo', cursive;
 }
@@ -540,7 +540,7 @@ h1, h2, h3 {
     }
   
     .texto-bienvenida h1 {
-      font-size: 2rem;
+      font-size: 50px;
     }
   
     .imagen-bienvenida {
@@ -630,7 +630,7 @@ h1, h2, h3 {
     }
   
     .texto-bienvenida h1 {
-      font-size: 2.5px;
+      font-size: 50px;
       text-align: left;
     }
   
