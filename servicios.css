@@ -1,8 +1,3 @@
-/* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
-
 /* Estilos generales */
 * {
     margin: 0;
@@ -11,8 +6,6 @@
 
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 h1, h2, h3 {
@@ -25,69 +18,92 @@ h1, h2, h3 {
 
 /* Menú de navegación */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px 20px 50px;
-  background-color: #9bb18c;
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #9bb18c;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
 }
 
 /* Imagotipo */
 .Imagotipo img {
-  height: 30px;
-  width: auto;
+    height: 1.875rem;
+    width: auto;
 }
 
-/* Contenedor de los botones */
+/* Contenedor en general*/
 .menu-container {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
-/* Botones de navegación */
+/* da estilo a la lista de navegación.*/
+.menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+/* controla los ítems de la lista.*/
+.menu-container li {
+    display: flex;
+}
+
+/* da estilo a los enlaces */
 .menu-container a {
-  text-decoration: none;
-  color: #1A2025;
-  font-family: 'Outfit', sans-serif;
-  font-size: 25px;
-  border-radius: 50px;
-  padding: 8px 15px;
-  white-space: nowrap;
+    text-decoration: none;
+    color: #1A2025;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.563rem;
+    border-radius: 50px;
+    padding: 8px 15px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
 }
 .menu-container a:hover {
-  background-color: #f5f5dc; 
-  transition: all 0.3s ease;
+    background-color: #f5f5dc; 
 }
 
 /* Botón de contacto */
 .btn-nav-contacto {
-  background-color: #D8A7B1;
-  border-radius: 50px;
-  font-size: 22px;
-  padding: 12px 25px;
-  color: #1A2025;
-  text-decoration: none;
-  margin-left: 20px;
-  box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
+    background-color: #D8A7B1;
+    border-radius: 50px;
+    padding: 12px 25px;
+    color: #1A2025;
+    text-decoration: none;
+    margin-left: 20px;
+    box-shadow: 0 4px 10px rgba(36, 36, 33, 0.7);
 }
 .btn-nav-contacto:hover {
-  background-color: #f5f5dc; 
-  box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
+    background-color: #f5f5dc; 
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
 }
-/* Banner 2 */
-.seccion-banner {
-  width: 100%;    
-  overflow: hidden;  
+
+/* Frase de inicio */
+.frase-inicio {
+  background-color: #f5f5dc;
+  box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
+  padding: 1.5rem 1rem 4rem 1rem;      
+  text-align: center;
+  color: #1A2025;
 }
-.banner-2 img {
-  width: 100%;
-  display: block;
+.frase-inicio h1 {
+  font-family: 'MonteCarlo', cursive;
+  font-size: 3.125rem;
+  margin: 0;
+}
+
+.frase-inicio p {
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
 }
  
 /* Intro servicios */
@@ -120,14 +136,17 @@ h1, h2, h3 {
   }
 
   .intro-texto h2 {
-    font-size: 30px;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 1.875rem;
     margin-bottom: 20px;
     color: #f5f5dc;
+    text-decoration:underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 2px;
   }
   
   .intro-texto p {
-    font-size: 25px;
+    font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.6;
     color: #f5f5dc;
@@ -140,7 +159,7 @@ h1, h2, h3 {
   }
   /* titulo*/
   .titulo-seccion {
-    font-size: 80px;
+    font-size: 3.125rem;
     text-align: center;
     margin-bottom: 60px;
     font-family: 'MonteCarlo', cursive; 
@@ -152,7 +171,7 @@ h1, h2, h3 {
   }
    /* sub*/
   .bloque-servicio h3 {
-    font-size: 30px;
+    font-size: 1.75rem;
     font-weight: 600;
     border-bottom: 2px solid #1A2025;
     margin-bottom: 30px;
@@ -161,7 +180,7 @@ h1, h2, h3 {
   
   .contenido-servicio {
     font-family: 'Outfit', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -184,15 +203,53 @@ h1, h2, h3 {
     margin-left: 60px;
   }
   .contenido-servicio li strong {
-    font-size: 23px;
+    font-size: 1.25rem;
     font-weight: 600;
   }
   .contenido-servicio li {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.8;
     margin-bottom: 10px;
     color: #1A2025;
   }
+/* Carrusel contenedor */
+.carrusel {
+  position: relative; /* <- necesario para posicionar botones */
+  display: inline-block;
+}
+
+/* Flechas */
+.carrusel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 2rem;
+  color: #1A2025;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+/* Flecha izquierda */
+.carrusel .anterior {
+  left: 10px;
+}
+
+/* Flecha derecha */
+.carrusel .siguiente {
+  right: -20px;
+}
+
+/* Efecto hover */
+.carrusel button:hover {
+  background-color: #D8A7B1;
+  box-shadow: 0 6px 12px rgba(216, 137, 166, 0.5);
+}
   /* seccion agendamiento */
   .agenda-cita {
     background-image: url('fondo-1.png');
@@ -229,42 +286,123 @@ h1, h2, h3 {
     color: #1A2025;
     box-shadow: 0 4px 10px rgba(245, 245, 220, 0.7);
   }
-  @media (max-width: 768px) {
-    .navbar {
-      display: flex; 
-      flex-direction: column; 
-      align-items: center;
-      padding: 10px;
-      width: 100%;
-    }
-    .menu-container {
-           display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        width: 100%;
-        gap: 10px;
-    }
-    .Imagotipo {
-      margin-bottom: 10px; 
-    }
-  
-    .Imagotipo img {
-      height: 60px; 
-    }
+  /* Estilo para el footer informativo */
+.informativo {
+    background-color: #F5F5DC; 
+    font-size: 1.25rem;
+    padding: 50px 20px;
+    color: #1A2025; 
+    box-shadow: inset 0 0 20px rgba(36, 36, 33, 0.7);
   }
-
-
-  @media (min-width: 1024px) {
-    .menu-container {
-      width: 500px;
-      padding: 20px 40px;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+  
+  /* Contenedor de las columnas */
+  .footer-contenido {
+    font-weight: normal;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  /* Quitar puntos de las listas */
+.columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* Estilo de cada columna */
+  .columna {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px; /* Ajusta según necesites */
+  }
+  
+  /* Títulos de cada columna */
+  .columna h1 {
+    font-family: 'MonteCarlo', cursive;
+    font-weight: normal;
+    color:#1A2025;
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de los enlaces */
+  .columna a {
+    color: #1A2025; 
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Hover para enlaces */
+  .columna a:hover {
+    color: #d8a7b1; 
+    text-decoration: none;
+  }
+/* Estilo para el footer final */
+.footer-final {
+    background-color: #1A2025; 
+    color: #F5F5DC;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300
+  }
+  
+  /* Estilo para los enlaces del footer final */
+  .footer-final a {
+    color: #F5F5DC;
+    text-decoration: underline;
+    margin: 0 5px;
+  }
+  
+  .footer-final a:hover {
+    color: #D8A7B1;
     
-  
-    .Imagotipo img {
-      height: 90px;
-    }
   }
+  @media (max-width: 768px) {
+ .navbar {
+  flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .menu-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+      width: 100%;
+      gap: 10px;
+  }
+  .menu-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+  }
+   .menu-container li {
+    text-align: center;
+  }
+  .Imagotipo {
+    margin-bottom: 10px; 
+  }
+
+  .Imagotipo img {
+    height: 60px; 
+  }
+}
+@media (min-width: 1024px) {
+  .menu-container {
+    width: 500px;
+    padding: 20px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Imagotipo img {
+    height: 90px;
+  }
+ }
