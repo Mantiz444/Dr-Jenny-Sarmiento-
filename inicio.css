@@ -195,7 +195,7 @@ h1, h2, h3 {
     cursor: pointer;
     display: inline-block;
     margin-top: 15px;
-    padding: 15px 40px;
+    padding: 12px 32px; 
     background-color: #d8a7b1;
     color: #1A2025;
     font-family: 'Outfit', sans-serif;
@@ -218,7 +218,7 @@ h1, h2, h3 {
 /* Frase de inicio */
 .frase-inicio {
   background: url("Banner.png") center/cover no-repeat;
-  padding: 4rem 1rem;       /* Ajusta alto del banner */
+  padding: 4rem 1rem;       
   text-align: center;
   color: #1A2025;
 }
@@ -321,7 +321,7 @@ h1, h2, h3 {
     background-color: #1A2025;
     border: 2px solid #d8a7b1;
     color: #f5f5dc;
-    box-shadow: 0 8px 16px rgba(216, 137, 166, 0.6);
+    box-shadow: 0 6px 12px rgba(216, 137, 166, 0.5);
     
 }
 /* carrusel de testimonios*/
@@ -448,7 +448,7 @@ h1, h2, h3 {
   .columna {
     flex: 1;
     margin: 0 20px;
-    min-width: 200px; /* Ajusta según necesites */
+    min-width: 200px; 
   }
   
   /* Títulos de cada columna */
@@ -480,8 +480,8 @@ h1, h2, h3 {
     text-align: center;
     padding: 20px 10px;
     font-family: 'Outfit', sans-serif;
-    font-size: 20px;
-    font-weight: 300
+    font-size: 1.25rem;
+    font-weight: normal;
   }
   
   /* Estilo para los enlaces del footer final */
@@ -540,7 +540,7 @@ h1, h2, h3 {
     }
   
     .texto-bienvenida h1 {
-      font-size: 32px;
+      font-size: 2rem;
     }
   
     .imagen-bienvenida {
@@ -557,11 +557,11 @@ h1, h2, h3 {
     font-size: 2rem;
   }
   .frase-inicio h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
     /* TESTIMONIOS */
   .carrusel-testimonios {
-    position: relative;      /* sigue siendo padre */
+    position: relative;     
     flex-direction: column;
     padding: 2rem 1rem;
     height: auto !important;
@@ -570,9 +570,9 @@ h1, h2, h3 {
 
   .contenido-testimonios {
     position: relative;
-    overflow: visible;       /* ahora todo fluye */
+    overflow: visible;       
     padding: 1rem;
-    display: flex;           /* flujo en columna */
+    display: flex;           
     flex-direction: column;
     align-items: center;
   }
@@ -586,16 +586,16 @@ h1, h2, h3 {
     z-index: 2;
   }
 
-  /* Aquí anulamos el absolute para que el texto baje debajo del H2 */
+  
   .slider-textos {
-    position: static;        /* ya no superponemos */
+    position: static;   
     width: 100%;
   }
 
   .slider-textos .testimonio {
-    position: static;        /* flujo normal */
-    display: none;           /* oculto salvo .activo */
-    margin: 0 auto 1rem;     /* centrado y separación */
+    position: static;        
+    display: none;           
+    margin: 0 auto 1rem;     
     width: 90%;
     max-width: 400px;
     text-align: center;
@@ -620,7 +620,7 @@ h1, h2, h3 {
     }
   
     .Imagotipo img {
-      height: 90px;
+      height: 5.625rem;
     }
   
     .contenedor-bienvenida {
@@ -630,7 +630,7 @@ h1, h2, h3 {
     }
   
     .texto-bienvenida h1 {
-      font-size: 64px;
+      font-size: 2.5px;
       text-align: left;
     }
   
